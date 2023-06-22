@@ -1,0 +1,419 @@
+/*!
+Theme Name: ThemeName
+Theme URI: https://strength9.co.uk
+Description: XRAY Naked Base Theme
+Author: Dave Pratt
+Author URI: https://strength9.co.uk
+Version: 1.0.1
+Text Domain: xray
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: naked, bare, quick
+
+*/
+/*
+@font-face {
+	font-family: 'Montserrat';
+	src: url('assets/fonts/Montserrat-Regular.eot'); src: url('assets/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Montserrat-Regular.woff2') format('woff2'), url('assets/fonts/Montserrat-Regular.woff') format('woff'), url('assets/fonts/Montserrat-Regular.ttf') format('truetype'), url('assets/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg'); font-weight: normal; font-style: normal; font-display: swap;
+}
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 100%;
+} /*16px*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0;
+  overflow-x: hidden;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  position: relative;
+  background-color: rgb(246, 242, 235);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 19px;
+  line-height: 1;
+}
+@media (min-width: 360px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-weight: 200;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(100px);
+  visibility: hidden;
+  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* Desktop Version */
+/* Mobile Version */
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: green;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  display: none;
+}
+header.fixed {
+  background-color: blue;
+}
+header .navigation-menu {
+  display: block;
+  position: relative;
+  min-height: 80px;
+  /* Mobile Version */
+  /* Desktop Version */
+}
+header .navigation-menu .main-navigation {
+  padding-left: 0px;
+  display: inline-block;
+}
+header .navigation-menu .main-navigation div.logo {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+header .navigation-menu .main-navigation div.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  color: #FFF;
+}
+header .navigation-menu .main-navigation li {
+  display: none;
+  list-style-type: none;
+  margin: 0px auto;
+  text-align: center;
+}
+header .navigation-menu .main-navigation li a {
+  color: #FFF;
+  margin: 0px 2px 0px 2px;
+  text-decoration: none;
+  display: inline-block;
+}
+header .navigation-menu .main-navigation li a:hover {
+  color: yellow;
+  transition: 0.3s ease;
+}
+header .navigation-menu .menuopen {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 45px;
+  height: 60px;
+  margin: 10px 10px 10px auto;
+  cursor: pointer;
+  font-size: 35px;
+  color: #FFF;
+}
+header .navigation-menu .menuopen:hover {
+  color: yellow;
+}
+header .navigation-menu .menuclose {
+  display: none;
+}
+header .navigation-menu #menu-toggle {
+  display: none;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blue;
+  display: block;
+  margin: 0;
+  padding: 100px 0 0;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation label.menuclose {
+  z-index: 2100;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin: 20px 10px 5px auto;
+  cursor: pointer;
+  font-size: 35px;
+  color: #FFF;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation label.menuclose:hover {
+  color: yellow;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li {
+  display: block;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li a {
+  color: #FFF;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li a:hover {
+  color: yellow;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li > ul {
+  margin: 0px auto;
+  padding: 8px 0;
+  position: relative;
+  display: block;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li > ul:before {
+  top: 0;
+  content: "";
+  border-top: 1px dashed rgba(255, 255, 255, 0.7);
+  width: 80px;
+  height: 1px;
+  display: block;
+  margin: 2px auto 5px;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li > ul:after {
+  bottom: 0;
+  content: "";
+  border-top: 1px dashed rgba(255, 255, 255, 0.7);
+  width: 80px;
+  height: 1px;
+  display: block;
+  margin: 10px auto 2px;
+}
+header .navigation-menu #menu-toggle:checked + .main-navigation li > ul li {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (min-width: 850px) {
+  header .navigation-menu {
+    display: flex;
+    align-items: center;
+  }
+  header .navigation-menu .menuopen {
+    display: none;
+  }
+  header .navigation-menu .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto 0 auto auto;
+    padding: 0;
+  }
+  header .navigation-menu .main-navigation li {
+    position: relative;
+    display: block;
+  }
+  header .navigation-menu .main-navigation li a {
+    padding: 5px 8px;
+  }
+  header .navigation-menu .main-navigation li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: orange;
+    margin: 0;
+    padding: 10px;
+  }
+  header .navigation-menu .main-navigation li ul li {
+    white-space: nowrap;
+    display: block;
+    padding: 5px;
+    margin: 0;
+    white-space: nowrap;
+    display: block;
+    padding: 0px !important;
+  }
+  header .navigation-menu .main-navigation li ul li a {
+    display: block;
+    margin: 0 !important;
+    padding: 5px !important;
+  }
+  header .navigation-menu .main-navigation li:hover ul {
+    display: block;
+  }
+  header .navigation-menu label {
+    display: none;
+  }
+}
+
+section {
+  background-color: palegreen;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 20px;
+}
+@media only screen and (min-width: 480px) {
+  section {
+    background-color: palevioletred;
+    padding: 60px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section {
+    background-color: palegreen;
+    padding: 80px 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  section {
+    background-color: palevioletred;
+    padding: 90px 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section {
+    background-color: palegreen;
+    padding: 100px 20px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  section {
+    background-color: rgba(219, 112, 147, 0.353);
+    padding: 120px 20px;
+  }
+}
+section .container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+section .container > .row {
+  margin: 0 0;
+  width: 100%;
+}
+section .container > article {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
+  background-color: lightblue;
+}
+
+/* Inserts Template SCSS Files */

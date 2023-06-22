@@ -1,0 +1,12 @@
+{
+  "clips" : [
+    {
+      "content" : "@media only screen and (min-width:￼) {\n\t\n}",
+      "name" : "Media Query"
+    },
+    {
+      "content" : "\t@media only screen and (max-width:480px) {\n\t\n}\n@media only screen and (min-width:768px) {\n\t\n}\n@media only screen and (min-width:1024px) {\n\t\n}\n@media only screen and (min-width:1200px) {\n\t\n}\n@media only screen and (min-width:1500px) {\n\t\n}",
+      "name" : "Media Clips with Breakpoints"
+    }
+  ]
+}
