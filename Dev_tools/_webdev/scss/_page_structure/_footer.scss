@@ -1,1 +1,144 @@
+footer {
+	background-color:var(--w-green);
+	position:relative;
+	
+	.container {
+		padding:68px 20px; 
+		max-width:1000px;
+		margin:0px auto;
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  minmax(10px,auto) minmax(10px,auto) minmax(10px,auto);
+		gap: 30px 30px;
+		grid-auto-flow: row;
+		grid-template-areas: 
+		"column1" "column3"  "column2";
+		
 
+
+		li, address {
+			color: #fff;
+			font-family:var(--font-base);
+			font-style:normal;
+			font-weight:300;
+			font-size: 14px;
+			line-height: 25px;
+			padding: 0;
+			margin:0 0 0px;
+		
+		}
+		address {
+			margin:0 0 25px;
+		}
+		p {
+			margin:0;
+			font-size: 14px;
+			line-height: 25px;
+			text-align:center;
+			font-family:var(--font-base);
+			font-style:normal;
+			font-weight:300;
+		}
+		a {
+			color:#FFF;
+			text-decoration: none;
+			
+			&:hover {
+				color:var(--w-gold);
+				text-decoration: none;
+			}
+		}
+		ul {
+			margin:0;
+			padding:0;
+			list-style: none;
+			
+			li {
+				line-height:25px;
+			}
+			
+		}
+
+		.column1{
+			grid-area: column1; 
+			text-align: center;
+			
+			svg {
+				margin:0 auto;
+				width:129px;
+				height:129px;
+			}
+			
+		}
+		.column2 {
+			grid-area: column2; 
+			text-align:center;
+		}
+		.column_space {
+			grid-area: column_space;
+			display:none;
+			
+		}
+		.column3 {
+			text-align:center;
+			grid-area: column3;
+			h3 {
+				color: #FFFFFF;
+				font-family:var(--font-base);
+				font-size: 18px;
+				font-weight:600;
+				margin:0 0 15px;
+				padding:0;
+				
+			}
+		}
+		
+		@media only screen and (min-width:600px) {
+					grid-template-columns: 1fr 1fr;
+				grid-template-rows:  minmax(10px,auto) minmax(10px,auto) ;
+				grid-template-areas: 
+				"column1 column3 " "column2 column2";
+		}
+		
+		@media only screen and (min-width:768px) {
+
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: minmax(10px,auto) ;
+			grid-template-areas:  "column1 column2 column3";
+			
+			.column3 {
+			text-align:left;
+			}
+		}
+		@media only screen and (min-width:1020px) {
+			.column_space {
+			
+				display:block;
+				
+			}
+			grid-template-columns:200px 1fr 80px 335px;
+			grid-template-areas: 
+			"column1 column2 column_space column3";
+			max-width:1000px;
+			
+			
+			
+		}
+	}
+	
+	
+	.copyright {
+		background-color:var(--w-dgreen);
+		height:43px;
+		
+		p {
+			max-width:1140px;
+			margin: 0 auto;
+			font-size:12px;
+			height:43px;
+			line-height:43px;
+			color:#FFF;
+			font-weight:300;
+		}
+	}
+}

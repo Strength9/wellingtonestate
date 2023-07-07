@@ -1,45 +1,26 @@
 section {
-	background-color:palegreen;
 	width:100%;
 	box-sizing: border-box;
-	padding:50px 20px;
 	
-	@media only screen and (min-width:480px) {
-		background-color:palevioletred;
-		padding:60px 20px;
-	}
-	@media only screen and (min-width:768px) {
-		background-color:palegreen;
-		padding:80px 20px;
-	}
-	@media only screen and (min-width:1024px) {
-		background-color:palevioletred;
-		padding:90px 20px;
-	}
-	@media only screen and (min-width:1200px) {
-		background-color:palegreen;
-		padding:100px 20px;
-	}
-	@media only screen and (min-width:1500px) {
-		background-color:rgba(219, 112, 147, 0.353);
-		padding:120px 20px;
-	}
-	
-	.container {
-		max-width: $contentwidth;
-		margin:0 auto;
-		width:100%;
-	
-		>.row {
-			margin:0 0;
-			width:100%;
-		}
-		
-		>article {
-			margin:0 auto;
-			width:100%;
-			max-width: $contentwidth;
-			background-color:lightblue;
-		}
-	}
+
 }
+
+
+
+.nomg { margin-top: 0 !important; margin-bottom: 0 !important; }
+.stmgtp { margin-top: var(--standardgap) !important; margin-bottom: 0 ; }
+.stmgbt { margin-top: 0; margin-bottom: var(--standardgap) !important;}
+.stmgtpbt { margin-top: var(--standardgap) !important; margin-bottom: var(--standardgap) !important; }
+.dbmgtp { margin-top: var(--doublegap) !important; margin-bottom: 0; }
+.dbmgbt { margin-top: 0 !important; margin-bottom: var(--doublegap) !important;  }
+.dbmgtpbt { margin-top: var(--doublegap) !important; margin-bottom: var(--doublegap) !important;   }
+
+
+.qdmgtp { margin-top: var(--quadgap) !important; margin-bottom: 0 !important; }
+.qdmgbt { margin-top: 0 !important; margin-bottom: var(--quadgap) !important;  }
+.qdmgtpbt { margin-top: var(--quadgap) !important; margin-bottom: var(--quadgap) !important;   }
+
+.qdmgtpbtdb { margin-top: var(--quadgap) !important; margin-bottom: var(--doublegap) !important;   }
+
+
+

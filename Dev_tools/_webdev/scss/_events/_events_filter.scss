@@ -1,0 +1,81 @@
+.s9_we_eventsfilter {
+	margin:100px auto 50px;
+	max-width: $s9w_contentwidth;
+	width:90%;
+	display: grid; 
+	
+	  grid-template-columns: 1fr; 
+	  grid-template-rows: minmax(0px, auto) ; 
+	  grid-template-areas:  "filterinfo";
+	  
+	  gap: 0px 0px; 
+		
+		@media only screen and (min-width:500px) {
+			grid-template-columns:  1fr; 
+			  grid-template-rows: minmax(0px, auto); 
+			  gap: 0px 0px; 
+			  grid-template-areas:  "filterinfo " ;
+		}
+		
+		@media only screen and (min-width:900px) {
+			grid-template-columns: 1fr; 
+			  grid-template-rows: 1fr; 
+			  gap: 0px 0px; 
+			  grid-template-areas:  "filterinfo";
+		}
+		
+		div {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-content: stretch;
+			align-items: center;
+			
+			&.filterinfo {
+				grid-area: filterinfo; 
+				
+				form {
+					width:100%;
+					text-align:center;
+				}
+				@include s9w_event_grid_filter_area_filterinfo;
+				
+				h4 {
+					flex:0 0 100%;
+					@include s9w_event_grid_filter_titles;
+				}
+				
+				label {
+					
+					
+					@include s9w_event_grid_filter_label;
+					
+					
+				}
+				select , input[type="date"] {margin-right:20px;
+					@include s9w_event_grid_filter_field;
+				}
+				
+				input[type="submit"] {
+					background-color:rgba(0,0,0,0);
+					@include s9w_event_grid_filter_submit;
+				}
+				#cleargrid {
+					@include s9w_event_grid_filter_reset;
+					display:inline-block;
+					&:hover {
+						cursor:pointer;
+					}
+				}
+			}
+			
+
+			
+			
+			
+		
+			
+		}
+	
+}

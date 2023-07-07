@@ -1,0 +1,60 @@
+{
+    "key": "group_64a563a966bd2",
+    "title": "Component Margin",
+    "fields": [
+        {
+            "key": "field_64a563a9112f9",
+            "label": "Container Margin",
+            "name": "container_margin",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "nomg": "No Margin",
+                "stmgtp": "Standard Margin Top",
+                "stmgbt": "Standard Margin Bottom",
+                "stmgtpbt": "Standard Margin Both",
+                "dbmgtp": "Double Margin Top",
+                "dbmgbt": "Double Margin Bottom",
+                "dbmgtpbt": "Double Margin Both",
+                "qdmgtp": "Quad Margin Top",
+                "qdmgbt": "Quad Margin Bottom",
+                "qdmgtpbt": "Quad Margin Both",
+                "qdmgtpbtDb": "Quad Margin Top Double Margin Bottom"
+            },
+            "default_value": "nomg",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1688651252
+}

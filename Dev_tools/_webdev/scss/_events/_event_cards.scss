@@ -1,0 +1,74 @@
+
+
+
+
+article.eventcard {
+	list-style:none;
+	margin:0;
+	padding:0;
+	min-width:300px;
+	max-width:359px;
+	width:100%;
+	
+	
+		.eventthumbnail {
+			
+			background-position:center center;
+			background-size:cover;
+			
+			display:block;
+			margin-bottom:5px;
+			
+			@include s9w_event_card_thumbnail;
+		}
+		.eventsdate {  
+			 	width:100%;
+			 	display: grid;
+			    grid-template-columns: 40px 1fr;
+			    grid-template-rows: 1fr;
+			   gap: 30px 10px;
+			   grid-auto-flow: row;
+			   grid-template-areas:  "dateblock detailblock";
+			   padding:10px 0 0;
+
+			 
+			 .dateblock { grid-area: dateblock; 
+				 text-align:center;
+				 display: flex;
+				 flex-direction: column;
+				 flex-wrap: nowrap;
+				 justify-content: center;
+				 align-content: center;
+				 align-items: center;
+				 .shortdate {
+					 @include s9w_event_card_shortmonth;
+				 }
+				 .shortdateday {
+					 @include s9w_event_card_shortday;
+				 }
+			 }
+			 
+			 .detailblock { 
+					 grid-area: detailblock; 
+					 display: flex;
+					 flex-direction: column;
+					 flex-wrap: nowrap;
+					 justify-content: center;
+					 align-content: center;
+					 align-items: flex-start;
+			 
+			 		.longdate { 
+				  		@include s9w_event_card_longdate;
+			   		}
+					.eventtitle { 
+					 	@include s9w_event_card_eventtitle;
+				  	}   
+			 }
+
+			 
+			
+
+
+			 line-height:1 !important;
+		}
+ } 

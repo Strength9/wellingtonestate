@@ -1,5 +1,5 @@
 /*!
-Theme Name: ThemeName
+Theme Name: wellingtonestate
 Theme URI: https://strength9.co.uk
 Description: XRAY Naked Base Theme
 Author: Dave Pratt
@@ -12,13 +12,164 @@ Tags: naked, bare, quick
 
 */
 
-$smallcontent: 1100px;
-$contentwidth:1320px;
-
-$PageBackgroundColour : rgba(246, 242, 235, 1);
-$BaseTextColor: rgb(0, 0, 0);
-
-$BaseHeadingFont: Arial, Helvetica, sans-serif;
-$BasePageFont: Arial, Helvetica, sans-serif;
 
 
+:root {
+	--content-small: 1100px;
+	--content-normal: 1320px;
+	--page-background-color: rgba(246, 242, 235, 1);
+	--navwidth: 320px;
+	--font-base: Montserrat, sans-serif;
+	--font-base-heading: "clarendon-urw",serif;
+	--base-colour: rgb(0, 0, 0);
+	
+	--w-neutral: rgb(246, 242, 235);
+	--w-gold: #C49A6C;
+	--w-green: #004A33;
+	--w-dgreen: rgb(26, 55, 41);
+	--w-bgtrans: rgba(0, 74, 51, 0.182);
+	
+	--standardgap: 50px;
+	--doublegap:  100px;
+
+	--quadgap:  100px;
+	
+	--table-cell-border: rgba(0, 74, 51, 0.182);
+	--table-border: red;
+	  --alternatingmobilecolour: hsla(0,0%,50.2%,.0705882353);
+	  --wgr: rgb(0, 74, 51);
+	  --wgr-light: hsla(0,0%,50.2%,.0705882353);
+}
+
+
+@mixin imageposition() {
+		overflow: hidden;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom center;
+}
+@mixin headerborder() {
+	
+	&:before {
+		content: '';
+		border: 1px solid #fff;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		
+			@media screen and (min-width: 605px) {
+				top: 30px;
+				left: 30px;
+				right: 30px;
+				bottom: 30px;
+			}
+			
+		}
+
+	
+}
+
+@mixin greenbutton() {
+	background-color: var(--w-green);
+	font-family:var(--font-base-heading);
+	font-weight:300;
+	font-size: 15px;
+	padding: 12px 24px;
+	border-radius: 3px;
+	color: #fff;
+	fill: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	transition: all .3s;
+	display:inline-block;
+	
+		&:hover {
+			background-color: var(--w-gold);
+		}
+	
+}
+
+hr {
+	width:100%;
+	border:0;
+	border-top:1px solid var(--w-gold);
+	margin:30px auto;
+}
+
+.link {
+	margin:100px;
+	@include greenbutton();
+}
+
+.titleblock {
+	padding:13px 0 0;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content:  flex-start;
+	align-items: flex-start;
+	
+	h3,h1,h2 { 	
+		color:var(--w-green);
+		order: 1;
+		font-size:65px;
+		line-height:1;
+		margin:20px 0 0;
+		padding:0;
+		
+	}
+	h6 {
+		margin:0;
+		color:var(--w-gold);
+		order: 0;
+		font-family: var(--font-base-heading);
+		font-style:normal;
+		font-size: 25px;
+		line-height: 25px;
+		font-weight: 300 !important;
+		text-transform: uppercase;
+		position:relative;
+		padding-top:14px;
+		
+		
+		&:before {
+			bottom:38px;
+			position:absolute;
+			display:block;
+			content: " ";
+			width:100px;
+			height:1px;
+			background-color:var(--w-gold);
+		}
+	}
+}
+
+body:not(.home) {
+	main {
+		padding:95px 0 0;
+	}
+}
+
+.linkbutton {
+	margin:50px auto !important;
+	background-color: var(--w-green);
+	color:#FFF;
+	font-size: 15px;
+	padding: 6px 24px 8px;
+	border-radius: 3px;
+	position: inherit;
+	font-family:var(--font-base-heading);
+	font-weight: 300;
+	&:after {
+		display:none;
+	}
+	
+	&:hover {
+		color:#FFF;
+		background-color: var(--w-gold);
+	}
+}

@@ -145,10 +145,9 @@ add_filter('image_size_names_choose', 'post_image_sizes');
 		wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/style.css?v='.rand(111,999));
 		
 		wp_enqueue_script( 'jquery-core' );
-		
-		wp_enqueue_script( 'xray-modern', get_template_directory_uri() . '/assets/js/modern.js','','',true);
-		wp_enqueue_script( 'jquery-core' );
-		wp_enqueue_script( 'xray-custom', get_template_directory_uri() . '/assets/js/script.js','','',true);
+		wp_enqueue_script('include_modernizr', get_stylesheet_directory_uri().'/assets/js/modern.js');
+		wp_enqueue_script( 'xray_script', get_template_directory_uri() . '/assets/js/script.js','','',true);
+		wp_enqueue_script( 'xray_slider', get_template_directory_uri() . '/assets/js/slider.js','','',true);
 		
 
 
@@ -238,6 +237,9 @@ function xray_customblocks() {
 			  		'customClassName'	=> true,
 					'jsx' => true,
 		  ],
+		  
+
+		  
 		  'example'  => array(
 			  'attributes' => array(
 				  'mode' => 'preview',
@@ -253,13 +255,10 @@ function example_block_category( $categories, $post ) {
 			$categories,
 			array(
 				array(
-					'slug' => 's9blocks',
-					'title' => 'Strength 9',
+					'slug' => 'wellington',
+					'title' => 'Wellington Estate',
 				),
-			/*	array(
-					'slug' => 'wcpauto',
-					'title' => 'Wellington AutoFill',
-				), */
+		
 			)
 		);
 	}
@@ -268,7 +267,7 @@ function example_block_category( $categories, $post ) {
 
 function xray_block_scripts()  { 
 	// get the theme directory style.css and link to it in the header
-	wp_enqueue_script( 'xray-2', get_template_directory_uri() . '/assets/js/slider.js');
+//	wp_enqueue_script( 'xray-2', get_template_directory_uri() . '/assets/js/slider.js');
 }
 add_action( 'wp_enqueue_scripts', 'xray_block_scripts' ); 
 
@@ -293,51 +292,3 @@ function remove_posts_menu()
 {
 	remove_menu_page('edit.php');
 }
-
-/**
-	 * Font Awesome Kit Setup
-	 * 
-	 * This will add your Font Awesome Kit to the front-end, the admin back-end,
-	 * and the login screen area.
-	 
-	if (! function_exists('fa_custom_setup_kit') ) {
-	  function fa_custom_setup_kit($kit_url = '') {
-		foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
-		  add_action(
-			$action,
-			function () use ( $kit_url ) {
-			  wp_enqueue_script( 'font-awesome-kit', $kit_url, [], null );
-			}
-		  );
-		}
-	  }
-	}
-fa_custom_setup_kit('https://kit.fontawesome.com/23bfc676af.js');		
-
-*/
-/**
-	 * Google Fonts
-	 
-function wpb_add_google_fonts() {
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600', false ); 
-}
- 
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
-*/
-
-/**
-	 * Favicons
-	 
-add_action( 'wp_head', 'ilc_favicon');
-function ilc_favicon(){
-	echo '<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/favicon-16x16.png">
-	<link rel="manifest" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/site.webmanifest">
-	<link rel="mask-icon" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-config" content="/wp-content/themes/PurleyMortgageSolutions/assets/img/fav/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">';
-}
-*/

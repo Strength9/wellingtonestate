@@ -1,0 +1,249 @@
+
+$smallcontent: 1100px; 
+$s9w_contentwidth:1326px;
+$s9w_thumbnailbackgrounds: lightgrey;
+$s9w_defaulttxtcolor: #004a33;
+$s9w_hovercol: #c49a6c;
+
+@mixin tempbg {
+   background-color: pink;
+}
+// ***** ****** Event Cards ***** ****** //
+@mixin s9w_event_card_thumbnail {
+    background-color: $s9w_thumbnailbackgrounds;
+    width:100%;
+    height:200px;
+}
+@mixin s9w_event_card_longdate {
+    color: $s9w_defaulttxtcolor;
+    font-size:15px;
+    padding-bottom:5px !important;
+}
+@mixin s9w_event_card_eventtitle {
+    color: $s9w_defaulttxtcolor; 
+    font-size:16px;
+    font-weight:bold;
+}
+@mixin s9w_event_card_shortmonth {
+    color: $s9w_defaulttxtcolor;
+    font-size:15px;
+    margin-top:0px;
+}
+@mixin s9w_event_card_shortday {
+    color: $s9w_defaulttxtcolor; 
+    font-size:20px;
+}
+
+// ***** ****** Event Detail Page ***** ****** //
+// Event Detail
+@mixin s9w_event_detail_title {
+    color: $s9w_defaulttxtcolor;
+    font-size:24px;
+    @media only screen and (min-width:500px) {
+        font-size:28px;
+     }
+    @media only screen and (min-width:600px) {
+       font-size:36px;
+    }
+}
+@mixin s9w_event_detail_dateline {
+    color: $s9w_defaulttxtcolor;
+    margin-bottom:25px;
+}
+@mixin s9w_event_detail_subarea_titles {
+    color: $s9w_defaulttxtcolor;
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;	
+    margin:0 0 30px;
+}
+@mixin s9w_event_detail_subarea_content {
+    color: $s9w_defaulttxtcolor;
+    font-size:16px;	
+    margin:0 0 30px;
+}
+@mixin s9w_event_detail_subarea_content_span {
+    font-weight:bold;
+} 
+@mixin s9w_event_detail_subarea_content_address {
+    font-style: normal;
+}
+@mixin s9w_event_detail_subarea_link {
+    color: $s9w_defaulttxtcolor;
+    
+    
+    &:hover {
+        color:$s9w_hovercol;
+    }
+}
+
+// Event Small items
+@mixin s9w_event_detail_breadcrumbbtop {
+   display:inline-block;
+   color: $s9w_defaulttxtcolor;
+    padding:10px;
+    
+    &:hover {
+        color:$s9w_hovercol !important;
+    }
+}
+@mixin s9w_event_detail_icalendar {
+   color: $s9w_defaulttxtcolor;
+    padding:10px;
+    
+    &:hover {
+        color:$s9w_hovercol !important;
+    }
+}
+@mixin s9w_event_detail_buttonlinks {
+    color: #FFF !important;
+    padding:10px;
+    background-color:$s9w_defaulttxtcolor;
+     padding:14px 20px;
+    
+    &:hover {
+        color:$s9w_hovercol !important;
+    }
+}
+@mixin s9w_event_detail_breadcrumblinks {
+    color:$s9w_defaulttxtcolor !important;
+    padding:10px;
+    
+    &:hover {
+        color:$s9w_hovercol !important;
+    }
+}
+@mixin s9w_event_detail_relatedtitle {
+    color: $s9w_defaulttxtcolor;
+    padding:10px;
+    text-align:center;
+    font-size:26px !important;
+    
+    @media only screen and (min-width:600px) {
+       font-size:36px !important;
+    }
+    
+}
+
+// Event Large Detail
+@mixin s9w_event_detail_main_spacing {
+    padding:20px 0 0;
+}
+@mixin s9w_event_detail_main_textfonts {
+    color: $s9w_defaulttxtcolor;
+    line-height:1.2;
+    
+}
+@mixin s9w_event_detail_main_li {
+   color: $s9w_defaulttxtcolor;
+    line-height:1.2;
+    margin:5px 0 !important;
+    font-size:16px;
+    
+}
+@mixin s9w_event_detail_main_h1 {
+    color: $s9w_defaulttxtcolor;
+}
+@mixin s9w_event_detail_main_h2 {
+    color: $s9w_defaulttxtcolor;
+}
+@mixin s9w_event_detail_main_links {
+    color: $s9w_defaulttxtcolor;
+}
+
+// ***** ****** Event Filters ***** ****** //
+@mixin s9w_event_grid_filter_titles {
+   text-align:center;
+   color: var(--w-green);
+   font-family:var(--font-base-heading);
+   font-size: 26px;
+   font-weight: 300;
+   text-transform: capitalize;
+   font-style: normal;
+   
+   margin-bottom:40px;
+   display:block;
+}
+@mixin s9w_event_grid_filter_label {
+    margin:10px 0px 5px;
+   display:block;
+    @media only screen and (min-width:900px) {
+        display:inline-block;
+        margin:0px 10px 0px 0px !important;
+    }
+}
+
+@mixin s9w_event_grid_filter_field {
+   padding:5px;
+   margin-bottom:10px;
+}
+@mixin s9w_event_grid_filter_resultstitle {
+    font-weight:bold;
+    text-transform:uppercase;
+    display:block;
+    margin:0 0 0px;
+}
+@mixin s9w_event_grid_filter_results_text {
+    margin:0px;
+    padding:0px;
+    flex:1 1 20%;
+    padding-right:10px;
+    
+    &:last-child {
+        padding-right:0;
+    }
+}
+@mixin s9w_event_grid_filter_reset {
+    
+
+}
+
+@mixin s9w_event_grid_filter_submit {
+   border:0px;
+  margin:50px auto !important;
+  background-color: var(--w-green);
+  color:#FFF;
+  font-size: 15px;
+
+  padding: 6px 24px 8px;
+  border-radius: 3px;
+  position: inherit;
+  font-family:var(--font-base-heading);
+  font-weight: 300;
+  &:after {
+     display:none;
+  }
+  
+  &:hover {
+     color:#FFF;
+     background-color: var(--w-gold);
+     cursor:pointer;
+  }
+}
+
+@mixin s9w_event_grid_filter_area_filterinfo {
+    padding:20px 0; 
+}
+@mixin s9w_event_grid_filter_area_filterdata {
+    padding:20px 0;
+}
+@mixin s9w_event_grid_filter_area_filter_reset {
+    padding:20px 0;
+}
+// ***** ****** Event Grid ***** ****** //
+@mixin event_grid  {
+    width:90%;
+    margin:50px auto 100px;
+}
+@mixin s9w_event_grid_noresults {
+    text-align:center;
+    
+    h1 {
+        font-size:45px;
+    }
+}
+
+@import '_events_filter';
+@import '_events_grid.scss';   
+@import '_event_cards';   
+@import 'single-wellington-events'; 

@@ -1,0 +1,116 @@
+.wellington_splashscreen {
+	background-color: var(--w-bgtrans);
+	width:100vw;
+	height:100vh;
+	position:relative;
+	
+	@include headerborder();
+	
+	.splash-text {
+		z-index: 3;
+		position: absolute;
+		bottom: 70px;
+		top: auto;
+		left: 50%;
+		text-align: center;
+		transform: translateX(-50%);
+		
+		h3 {
+			font-size: 38px;
+			text-transform: uppercase;
+			color: white;
+			display: none;
+			font-family: var(--font-base-heading);
+			font-weight: 300;
+			margin-bottom:16px;
+			line-height:1.2;
+			text-align: center;
+			
+			@media only screen and (min-height: 800px) {
+				display: block;
+			}
+
+		}
+		p {
+			font-size: 17px;
+			font-family:  var(--font-base);
+			font-weight: 300;
+			color: white;
+			display: block;
+			margin-bottom:15px;
+			text-align: center;
+		}
+		
+
+		
+		.splasharrow{ 
+		  width: 38px;
+		  height: 38px;
+		  margin: 30px auto 0;
+		  animation: bounce 5s 2s infinite;
+		  cursor: pointer;
+		  border: 2px solid white;
+		  border-radius: 20px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		
+		svg{
+			transform: rotate(90deg);
+			transform-origin: center;
+		
+				path{
+					stroke: #FFFFFF;
+				}
+			}
+			}
+		
+	   
+	}
+	.introblock_position {
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		top: 15px;
+		left: 10%;
+		bottom: 15px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: 80%;
+		
+		@media only screen and (min-width:426px) {
+			  top: 30px;
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+		}
+
+			.introblock {
+				width:100%;
+				
+				 @media only screen and (min-width:426px) {
+					width:350px;
+				}
+
+				@media only screen and (min-width: 605px) {
+					width:400px;
+				}
+				
+			}
+		
+	   
+	}
+	
+	.headerlarge {
+		@include imageposition();
+		width:100%;
+		height:100%;
+		display:block;    
+		
+	}
+}

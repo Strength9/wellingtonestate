@@ -1,0 +1,33 @@
+
+	.imagegrid {
+		margin:0 auto;
+		max-width: 309px;
+		display: grid;
+		  grid-template-columns: repeat(1, 309px);
+		grid-auto-rows:  222px;
+		  gap: 20px;
+		 
+		
+		@media only screen and (min-width:638px) {
+			max-width: 638px;
+			grid-template-columns: repeat(2, 309px);
+		}
+		@media only screen and (min-width:1007px) {
+			max-width: 967px;
+			grid-template-columns: repeat(3, 309px);
+			 grid-auto-rows:  222px;
+
+		}
+		
+		
+		>div {
+			display:block;
+			background-color: var(--w-bgtrans);
+			
+			@include imageposition();
+		}
+
+		
+		
+	}
+	
