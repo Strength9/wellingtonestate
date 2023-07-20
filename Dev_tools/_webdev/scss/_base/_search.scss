@@ -1,0 +1,131 @@
+div.searchholder {
+	z-index: 200;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #004a33;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(0%) translateY(0%);
+	-moz-transform: translateX(0%) translateY(0%);
+	-ms-transform: translateX(0%) translateY(0%);
+	transform: translateX(0%) translateY(0%)
+}
+
+div.searchholder.search-show {
+	visibility: visible
+}
+
+div.searchholder .search-close-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	cursor: pointer
+}
+
+div.searchholder .search-close-button span {
+	background: #f6f2eb;
+	border: none;
+	border-radius: 3px;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease
+}
+
+div.searchholder .search-close-button .top {
+	-webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+	transform: translateY(11px) translateX(0) rotate(45deg)
+}
+
+div.searchholder .search-close-button .middle {
+	opacity: 0
+}
+
+div.searchholder .search-close-button .bottom {
+	top: 22px;
+	-webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+	transform: translateY(-11px) translateX(0) rotate(-45deg)
+}
+
+div.searchholder form {
+	width: 80%;
+	border-bottom: 1px solid #f6f2eb;
+	padding: 10px;
+	text-align: center
+}
+
+div.searchholder form input {
+	width: 90%;
+	max-width: 450px;
+	font-size: 40px;
+	background-color: transparent;
+	border: 0;
+	text-align: center;
+	margin: auto;
+	color: #f6f2eb
+}
+
+div.searchholder form ::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .6)
+}
+
+div.searchholder form ::-moz-placeholder {
+	color: rgba(255, 255, 255, .6)
+}
+
+div.searchholder form :-ms-input-placeholder {
+	color: rgba(255, 255, 255, .6)
+}
+
+div.searchholder form :-moz-placeholder {
+	color: rgba(255, 255, 255, .6)
+}
+
+div.searchholder form :focus {
+	outline: none
+}
+
+div.searchholder form :required {
+	box-shadow: none
+}
+
+div.searchholder form :invalid {
+	box-shadow: none
+}
+
+.results h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 35px
+}
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent
+}

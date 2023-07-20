@@ -292,3 +292,8 @@ function remove_posts_menu()
 {
 	remove_menu_page('edit.php');
 }
+
+add_action( 'init', 'wpse325327_add_excerpts_to_pages' );
+function wpse325327_add_excerpts_to_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}

@@ -34,7 +34,15 @@
 <?php echo s9ACF_textfield('copyright_bar', 'options' , $tag = 'p', $className = '',$emptyText = '',  'no');?>
 </div>	
 </footer>
+<div class="searchholder" id="searchholder"> 
+	<div class="search-close-button active" id="close-search-toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
 
+	<form action="/" method="get" id="searchform" class="pagesearch">
+		<input type="text" id="s" name="s" placeholder="Search...">
+		<input type="submit" hidden />
+	</form>
+	
+</div>
 <?php wp_footer(); ?>
 
 </body>

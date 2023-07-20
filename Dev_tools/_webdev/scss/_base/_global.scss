@@ -157,7 +157,7 @@ body:not(.home) {
 .linkbutton {
 	margin:50px auto !important;
 	background-color: var(--w-green);
-	color:#FFF;
+	color:#FFF !important;
 	font-size: 15px;
 	padding: 6px 24px 8px;
 	border-radius: 3px;
@@ -169,7 +169,7 @@ body:not(.home) {
 	}
 	
 	&:hover {
-		color:#FFF;
-		background-color: var(--w-gold);
+		color:#FFF !important;
+		background-color: var(--w-gold) !important;
 	}
 }

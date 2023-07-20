@@ -1,15 +1,15 @@
-<?php 
-get_header();
+<?php get_header();
 do_action('xray_after_body');
-?>
-<?php
-function StoreSearchterm($searchterm) {
+
+
+function StoreSearchterm($searchterm,$searchres) {
+	$searchterm = sanitize_text_field(preg_replace( '/[^a-z]/i', " ", $searchterm) );
+	
 	global $wpdb;
-		
-		$value = $searchterm;
+		$my_table_name = $wpdb->prefix . 'posts';
 		$sql = $wpdb->prepare( "
 		
-			INSERT INTO {$wpdb->prefix}posts` (
+			INSERT INTO $my_table_name (
 			
 				`post_author`,
 				`post_date`,
@@ -41,7 +41,7 @@ function StoreSearchterm($searchterm) {
 					CURRENT_TIMESTAMP,
 					CURRENT_TIMESTAMP,
 				%s,
-				'Store Search Data',
+				%s,
 				'',
 				'publish',
 				'closed',
@@ -59,98 +59,72 @@ function StoreSearchterm($searchterm) {
 				'search_data',
 				'',
 			0 
-			);", $value);
+			);", $searchres,$searchterm);
 		
-		//SELECT * FROM {$wpdb->prefix}some_table WHERE some_column = %s", $value );
 		$data =  $wpdb->get_results( $sql );
 		
 	
 		
-		return 'Dave';
+		return $searchterm.' '.$searchres;
 		
 	};
-	?>
+?>
 <main>
-	
-<h1>Search Results</h1>
-
-</section>
+	<div class="searchheader" style="background-image:url('/wp-content/uploads/2023/07/IMG_0154-Copy.jpg');">
+	<h1>Search Results</h1></div>
 			
-			
+			<section class="searchresults">
+				
 				<?php
-							
-							StoreSearchterm($_GET["s"]);
-							
-							
-							$s = get_search_query();
+							$SR = '';
+							$s= get_search_query();
 							$args = array( 's' =>$s );
 								// The Query
 							$the_query = new WP_Query( $args );
 							if ( $the_query->have_posts() ) { 
 										
-								echo '<section class="searchresults">
-								
-								<div class="wcp-columns">
-									 <div class="wcp-column t_c">
-									 
-									 <h1 class="titletext green">Search Results</h1>
-									 
-									 <form action="/" method="get" id="searchform" class="innersearch">
-										 <input type="text" id="s" name="s" placeholder="Search..." value="'.$_GET['s'].'">
-										 <input type="submit" value="Search" />
-									 </form>
-									 
-									 </div>
-									<div class="wcp-column">
-										<ul class="res">
-									';
-												
-											$SR = '';
-										while ( $the_query->have_posts() ) {
 
-
-									   					$the_query->the_post();
-														$id = get_the_ID();
-									   					$linkurl = esc_url(get_permalink());
-									   					$linktitle  = get_the_title();
-														$featured_img_url = get_the_post_thumbnail_url($id,'full');				   					
-									  				
-										  					$urlarray =  get_field('page_image');
-										 			
-													 	$SR .= 'array('.$linktitle.','.$id.'),';
-													 
+		echo '
+		<div class="searchtitle">
+			<h1>Your Search Results</h1>
+		</div>
+		<div class="searchcontainer">';
+									
+		$SR = '';
+		while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				$linkurl = esc_url(get_permalink());
+				$linktitle  = get_the_title();
+				$SR .= $id.', ';
+				$ptype =  $post->post_type;
+				
+				if ($ptype === 'events') {
+					$desc = get_field('calendar_description' );
+				} else {
+					$desc = get_the_excerpt( );
+				}					   		
+				echo '<div><a href="'.$linkurl.'" title="'.$linktitle.'" . class="cta-card" > <h2>'.$linktitle.'</h2>'.$desc.$ptype.'
+				<div class="click">
+				<div class="clicklink">Read More</div>
+				</div></a></div>';								 		
+			}
+			echo '</div>';			
+									
+	}else{
+			?>
+					
+		<div class="searchtitle">
+			<h1>Your Search Results</h1>
+		</div>
+		<div class="notfound">
+					<p>Sorry, but nothing matched your search criteria. Please again with some different keywords.</p>
+			
+					<form action="/" method="get" id="searchform" class="innersearch"><input type="text" id="s" name="s" placeholder="Search..."><input type="submit" value="Search" /></form>
+		</div>
 															
-									  				echo  '<li> <a href="'.$linkurl.'" title="'.$linktitle.'" target="_new">
-																'.$linktitle.'</a></li>';
-														}
-										echo '</ul>
-										</div></div>
-										</section>';
-										
-										;
-									
-						}else{
-							?>
-
-										
-									<section >
-										<div class="wcp-columns">
-										  <div class="wcp-column">
-												<h1><span class="sub-heading">404</span>Page Not Found</h1>
-												<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-										  </div>
-										  <div class="wcp-column">
-									
-									<form action="/" method="get" id="searchform" class="innersearch">
-										<input type="text" id="s" name="s" placeholder="Search...">
-										<input type="submit" value="Search" />
-									</form>
-									
-									
-										</div> 
-									</section>
-							<?php } ?>
-
+<?php  $SR .= '0'; }  StoreSearchterm(get_search_query(),substr( $SR, 0, -2)); ?>
+	
+			</section>
 </main>
 
 <?php get_footer();  ?>
