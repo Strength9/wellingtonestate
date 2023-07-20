@@ -1835,6 +1835,11 @@ section {
 .wellington_inner_hero.innersmall {
   height: 500px;
 }
+@media only screen and (min-width: 800px) {
+  .wellington_inner_hero.innersmall {
+    height: 700px;
+  }
+}
 
 .imagebanner {
   height: 300px;
@@ -4097,6 +4102,67 @@ div.searchholder form :invalid {
   -webkit-tap-highlight-color: transparent;
 }
 
+.sitejobareas {
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px 30px;
+  grid-template-areas: ". ";
+}
+@media only screen and (min-width: 550px) {
+  .sitejobareas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". .";
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .sitejobareas {
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". . .";
+  }
+}
+.sitejobareas .site {
+  display: block;
+}
+.sitejobareas .site .siteimage {
+  background-color: red;
+  background-position: center center;
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+.sitejobareas .site .sitetext {
+  height: auto;
+  padding: 30px 0 0;
+  display: block;
+  text-align: center;
+  background-color: var(--w-green);
+}
+.sitejobareas .site .sitetext h3 {
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--font-base);
+  color: #FFF;
+}
+.sitejobareas .site .sitetext a {
+  display: inline-block;
+  background-color: var(--w-gold);
+  color: #FFF;
+  font-family: var(--font-base);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin: 30px auto 30px;
+}
+.sitejobareas .site .sitetext a:hover {
+  background-color: #FFF;
+  color: var(--w-gold);
+}
+
 .searchheader {
   width: 100vw;
   margin: 0px 0 50px;
@@ -4165,7 +4231,7 @@ div.searchholder form :invalid {
 }
 
 .searchtitle {
-  margin: 40px auto 10px;
+  margin: 40px auto 100px;
   padding: 0 10px;
   text-align: center;
   font-size: 40px;

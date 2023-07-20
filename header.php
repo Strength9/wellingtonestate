@@ -41,6 +41,14 @@ if( get_field('fix_page_header') ) {
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/wp-content/themes/wellingtonestate/assets/img/favi/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
 <?php wp_head(); ?>
 </head>
 

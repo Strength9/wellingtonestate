@@ -848,21 +848,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/Dev_tools\/_webdev\/hmmm\/_block_transdata.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/Dev_tools\/_webdev\/hmmm\/_block_transdata.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/Dev_tools\/_webdev\/scss\/_base\/_admin_overides.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -933,6 +918,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_global.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/Dev_tools\/_webdev\/scss\/_base\/_jobs.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_jobs.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1038,6 +1038,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_innerhero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_para.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_para.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1935,6 +1950,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/block\/block_map.php",
+      "oF" : 0
+    },
+    "\/template-parts\/block\/block_parrallax.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_parrallax.php",
       "oF" : 0
     },
     "\/template-parts\/block\/block_splashscreen.php" : {

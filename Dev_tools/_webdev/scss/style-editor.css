@@ -1835,6 +1835,11 @@ section {
 .wellington_inner_hero.innersmall {
   height: 500px;
 }
+@media only screen and (min-width: 800px) {
+  .wellington_inner_hero.innersmall {
+    height: 700px;
+  }
+}
 
 .imagebanner {
   height: 300px;

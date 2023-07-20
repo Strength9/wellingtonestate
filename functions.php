@@ -172,7 +172,25 @@ if( function_exists('acf_add_options_page') ) {
 			'capability'	=> 'edit_posts',
 			'position'      => 1,
 			'redirect'		=> false
-		));	
+		),
+	);	
+	
+	acf_add_options_page(
+		array(
+			'page_title' => 'Wellington Alerts',
+			'menu_title' => 'Site Pop Ups',
+			'menu_slug'  => 'pop-up-options',
+			'redirect'   => false,
+			'capability' => 'administrator',
+			'position'   => 1
+		)
+	);
+	
+	
+
+	
+	
+	
 };
 
 
