@@ -4105,7 +4105,7 @@ div.searchholder form :invalid {
 .sitejobareas {
   padding: 0 20px;
   max-width: 1140px;
-  margin: 40px auto;
+  margin: 150px auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px 30px;
@@ -4124,12 +4124,19 @@ div.searchholder form :invalid {
     grid-template-areas: ". . .";
   }
 }
+@media only screen and (min-width: 1280px) {
+  .sitejobareas {
+    padding: 0;
+  }
+}
 .sitejobareas .site {
   display: block;
 }
 .sitejobareas .site .siteimage {
   background-color: red;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 250px;
   display: block;
@@ -4161,6 +4168,126 @@ div.searchholder form :invalid {
 .sitejobareas .site .sitetext a:hover {
   background-color: #FFF;
   color: var(--w-gold);
+}
+
+hr.jobsdiv {
+  margin: 100px auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.jobaction {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 40px auto;
+}
+@media only screen and (min-width: 1280px) {
+  .jobaction {
+    padding: 0;
+    max-width: 1200px;
+  }
+}
+.jobaction h3 {
+  color: var(--w-green);
+  margin: 0 0 25px;
+  font-size: 22px;
+  text-align: left;
+  font-family: var(--font-base-heading);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.jobaction form {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.jobaction form input[type=text], .jobaction form select {
+  margin: 0 30px 0 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: var(--font-base);
+  color: var(--w-green);
+  font-size: 14px;
+  height: 54px;
+  line-height: 43px;
+  padding: 6px 20px;
+  -webkit-appearance: none;
+  margin-right: 30px;
+  width: 250px;
+  border: 1px solid rgb(221, 223, 227);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px -5px;
+}
+.jobaction form input[type=text]:first-child, .jobaction form select:first-child {
+  margin-left: -30px;
+}
+
+.jobslisting {
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px 30px;
+  grid-template-areas: ". ";
+}
+@media only screen and (min-width: 550px) {
+  .jobslisting {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". .";
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .jobslisting {
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". . .";
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .jobslisting {
+    padding: 0;
+  }
+}
+.jobslisting .jobdetail {
+  background-color: #FFF;
+  border: 1px solid rgb(221, 223, 227);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px -5px;
+  padding: 15px;
+}
+.jobslisting .jobdetail h4 {
+  color: var(--w-green);
+  margin: 0 0 15px;
+  font-size: 18px;
+  text-align: left;
+  font-family: var(--font-base-heading);
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.jobslisting .jobdetail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jobslisting .jobdetail ul li {
+  color: rgb(76, 76, 76);
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
+}
+.jobslisting .jobdetail ul li a {
+  display: block;
+  margin-top: 20px;
+  color: var(--w-gold);
+}
+.jobslisting .jobdetail ul li a:hover {
+  color: var(--w-green);
+}
+.jobslisting .jobdetail ul li a:after {
+  content: "→";
 }
 
 .searchheader {
