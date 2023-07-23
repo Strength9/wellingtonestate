@@ -1921,6 +1921,22 @@
       "oAP" : "\/template-parts\/block\/block_jobs_latestjobs.php",
       "oF" : 0
     },
+    "\/template-parts\/block\/block_jobs_sub_area_latestjobs.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_jobs_sub_area_latestjobs.php",
+      "oF" : 0
+    },
+    "\/template-parts\/block\/block_mailchimpsignup.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_mailchimpsignup.php",
+      "oF" : 0
+    },
     "\/template-parts\/block\/block_map.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1959,6 +1975,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/block\/block_template.php",
+      "oF" : 0
+    },
+    "\/template-parts\/block\/block_thinheader.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_thinheader.php",
       "oF" : 0
     },
     "\/template-parts\/block\/internals_imagegrid.php" : {

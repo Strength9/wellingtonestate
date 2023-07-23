@@ -9,10 +9,10 @@ Block Category: wellington
 ?>
 <hr class="jobsdiv">
 <div class="jobaction">
-	<form id="jobfilter" name="jobfilter">
+	<form>
 		<h3>Latest Jobs</h3>
 		<input type="text" id="searchfilter" name="searchfilter" placeholder="Search">
-		
+		<input type="submit" id="searchsubmit" name="searchsubmit" value="Filter">
 		<?php echo return_taxonomyselect('category_', 'tax_jobcat',$slected = 0, $intooption = 'All Job Categorys').
 		return_taxonomyselect('contract_', 'tax_jobtype',$slected = 0, $intooption = 'All Contract Types').return_taxonomyselect('location_', 'tax_joblocation',$slected = 0, $intooption = 'All Job Locations');?>
 		
@@ -78,7 +78,7 @@ $data = '';
 	jQuery(document).on("change", "#location_tax_joblocation, #contract_tax_jobtype, #category_tax_jobcat", function() {
 	  console.clear();
 	   
-		var location = jQuery('#location_tax_joblocation').val();
+	var location = jQuery('#location_tax_joblocation').val();
 	   var contract = jQuery('#contract_tax_jobtype').val();
 	    var jobcat = jQuery('#category_tax_jobcat').val();
 		
@@ -105,5 +105,30 @@ $data = '';
 		   
 	});
 	
+	jQuery(document).on("click", "#searchsubmit", function(e) {
+		e.preventDefault();
+	  console.clear();
+	   
+	var search = jQuery('#searchfilter').val();
+		
+		
+			jQuery.ajax({
+			  type: 'POST', 
+			  dataType: 'json',
+			  url: frontend_ajax_object.ajaxurl,  
+			  data: {
+				  action: 'search_projects', 
+				  security:  frontend_ajax_object.ajax_nonce,
+				  search :search
+				 
+			  },
+			success: function(response) {
+				 jQuery('.jobslisting').html(response.data);
+				 console.log(response.message);
+			}
+			  
+		});
 	
+		   
+	});
 </script>	

@@ -4176,6 +4176,35 @@ hr.jobsdiv {
   width: 90%;
 }
 
+hr.jobdivsmall {
+  margin: 0px 0 0px;
+  max-width: 1200px;
+  width: 100%;
+  border: 0px;
+}
+
+h2.latestjobs {
+  color: var(--w-green);
+  text-transform: uppercase;
+}
+
+.jobsbutton {
+  display: inline-block;
+  background-color: var(--w-gold);
+  color: #FFF !important;
+  font-family: var(--font-base);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin: 30px auto 60px;
+  text-decoration: none !important;
+}
+.jobsbutton:hover {
+  background-color: var(--w-green);
+  color: white !important;
+}
+
 .jobaction {
   padding: 0 20px;
   width: 100%;
@@ -4203,8 +4232,24 @@ hr.jobsdiv {
   padding: 0;
   margin: 0;
 }
+.jobaction form input[type=submit] {
+  margin: 0 0px 0 0px;
+  background-color: var(--w-green);
+  border-radius: 5px;
+  font-family: var(--font-base);
+  color: #FFF;
+  font-size: 14px;
+  height: auto;
+  line-height: 40px;
+  padding: 6px 20px;
+  -webkit-appearance: none;
+  width: auto;
+  border: 1px solid rgb(221, 223, 227);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px -5px;
+  margin-right: 20px;
+}
 .jobaction form input[type=text], .jobaction form select {
-  margin: 0 30px 0 0px;
+  margin: 0 20px 20px 0px;
   background-color: #fff;
   border-radius: 5px;
   font-family: var(--font-base);
@@ -4214,13 +4259,23 @@ hr.jobsdiv {
   line-height: 43px;
   padding: 6px 20px;
   -webkit-appearance: none;
-  margin-right: 30px;
-  width: 250px;
+  margin-right: 20px;
+  width: 190px;
   border: 1px solid rgb(221, 223, 227);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px -5px;
 }
 .jobaction form input[type=text]:first-child, .jobaction form select:first-child {
-  margin-left: -30px;
+  margin-left: -20px;
+}
+.jobaction form input[type=text] {
+  width: 220px;
+  margin-right: 10px;
+}
+.jobaction form select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 15px;
 }
 
 .jobslisting {
@@ -4288,6 +4343,118 @@ hr.jobsdiv {
 }
 .jobslisting .jobdetail ul li a:after {
   content: "→";
+}
+
+section.jobdata .container {
+  margin: 100px auto;
+  width: 90%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(10px, auto) minmax(10px, auto);
+  gap: 0px 0px;
+  grid-template-areas: "." ".";
+}
+@media only screen and (min-width: 800px) {
+  section.jobdata .container {
+    width: 90%;
+    max-width: var(--content-normal);
+    gap: 0px 30px;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+  }
+}
+@media only screen and (min-width: 1000px) {
+  section.jobdata .container {
+    gap: 50px;
+    grid-template-columns: 1fr 500px;
+    grid-template-areas: ". .";
+  }
+}
+section.jobdata .container .details {
+  font-family: var(--font-base);
+  color: var(--w-green);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+section.jobdata .container .details p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+section.jobdata .container .details strong {
+  font-weight: 500;
+}
+section.jobdata .container .details a {
+  color: var(--w-green);
+  text-decoration: underline;
+}
+section.jobdata .container .details a:hover {
+  color: var(--w-gold);
+}
+section.jobdata .container .details ul#jobbreakdown {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+section.jobdata .container .details h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  section.jobdata .container .details h1 {
+    font-size: 50px;
+  }
+}
+section.jobdata .container .form form {
+  box-sizing: border-box;
+  padding: 40px 40px;
+  background-color: #FFF;
+  border: 1px solid #dddfe3;
+}
+section.jobdata .container .form form h3 {
+  color: var(--w-green);
+  text-transform: uppercase;
+  margin: 0 0 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+section.jobdata .container .form form label {
+  font-weight: normal;
+  display: block;
+  color: var(--w-green);
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: var(--font-base);
+}
+section.jobdata .container .form form input, section.jobdata .container .form form textarea {
+  width: 100%;
+  border: 1px solid #dddfe3;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-family: var(--font-base);
+}
+section.jobdata .container .form form button[type=submit] {
+  font-family: var(--font-base);
+  font-size: 16px;
+  background-color: var(--w-gold);
+  color: #FFF;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin: 10px auto 0px;
+  border: 0;
+}
+section.jobdata .container .form form button[type=submit]:hover {
+  background-color: var(--w-green);
+  color: #FFF;
 }
 
 .searchheader {
