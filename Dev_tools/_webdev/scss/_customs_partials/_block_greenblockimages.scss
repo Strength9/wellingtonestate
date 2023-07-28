@@ -17,6 +17,17 @@
 			  padding:30px;
 			  background-color:var(--w-green);
 			  color:#fff;
+			  
+			  a { color:#FFF;
+				  position:relative;
+				  border-bottom:1px solid #FFF;
+				  
+				  &:hover {
+					  color: var(--w-gold);
+					  border-bottom:1px solid var(--w-gold);
+				  }
+				 
+			  }
 		}
 		  
 		.topimage1, .topimage2, .topimage3 { 
@@ -71,17 +82,24 @@
 			
 			width:90%;
 			grid-template-columns: repeat(17,1fr); 
-			  grid-template-rows:  repeat(12,1fr); 
-			  gap: 0px 0px;
+			grid-template-rows:  repeat(12,1fr); 
+			gap: 0px 0px;
 			
 			.topimage2, .topimage3, .fullimage {
 				display:block;
 			}
 			.text {  
+				min-height:500px;
 				padding:40px 40px 0px;
 				grid-column:1 / 10;
 				grid-row: 2/ 12;
 				z-index:5;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-content: stretch;
+				align-items: flex-start;
 			}
 			.topimage1 {
 				z-index:1;
