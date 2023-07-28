@@ -49,7 +49,7 @@ $slider_sub_title = s9ACF_textfield('slider_sub_title', '', '', '', '', 'no');
              <div class="slidedatabox">
                     <hr>
                     <div class="info">
-                    <img src="/wp-content/uploads/2023/07/Duke.png">
+                    <img src="/wp-content/uploads/2023/07/Community-Icon.webp">
                     <h4>'.$slider_sub_title.'</h4>
                     <h2>'.$slidertitle.'</h2>
                     <p>'.$slidertext.'</p>

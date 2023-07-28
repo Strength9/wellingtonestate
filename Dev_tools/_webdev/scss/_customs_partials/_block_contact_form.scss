@@ -29,6 +29,8 @@
 				
 				&.wpforms-field {
 					padding:0 !important;
+					width:100%;
+					margin:0;
 				}
 				input[type="text"], input[type="email"], select {
 					margin:0;
@@ -236,3 +238,10 @@
 	 -moz-box-shadow: none;
 	 -webkit-box-shadow: none;
   }
+
+
+
+.wpforms-1144-field_4-container {
+	background-color:pink;
+	width:100%;
+}

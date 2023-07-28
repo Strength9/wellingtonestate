@@ -1,0 +1,28 @@
+.imagestripbanner{ 
+
+background-color: var(--w-bgtrans);
+	width:100vw;
+	height:500px;
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	
+	@include imageposition();
+	
+	@include headerborder();
+	
+		@media only screen and (min-width:769px) {
+				height:500px;
+		}
+		@media only screen and (min-width:1000px) {
+				height:700px;
+		}
+		h1 { text-align:center; color:#FFF !important; margin:30px;}
+		h2{ text-align:center; color:#FFF !important; margin:30px;}
+ color:#FFF !important;
+
+}

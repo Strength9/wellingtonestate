@@ -2440,6 +2440,8 @@ section {
 }
 .wpforms-container .wpforms-field-container .wpforms-one-half.wpforms-field {
   padding: 0 !important;
+  width: 100%;
+  margin: 0;
 }
 .wpforms-container .wpforms-field-container .wpforms-one-half input[type=text], .wpforms-container .wpforms-field-container .wpforms-one-half input[type=email], .wpforms-container .wpforms-field-container .wpforms-one-half select {
   margin: 0;
@@ -2630,6 +2632,11 @@ section {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+.wpforms-1144-field_4-container {
+  background-color: pink;
+  width: 100%;
 }
 
 .leaflet-container {
@@ -4260,6 +4267,9 @@ section {
   background-color: #FFF;
   text-align: left;
 }
+.comslider .splide__slide .slidedatabox img {
+  width: 80px;
+}
 .comslider .splide__slide .slidedatabox hr {
   width: 90%;
   margin-left: auto;
@@ -4368,6 +4378,109 @@ section {
 }
 .comslider .splide__arrow:hover.splide__arrow--next {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3Cpath fill='%23C49A6C' d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
+}
+
+.imagestripbanner {
+  background-color: var(--w-bgtrans);
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  color: #FFF !important;
+}
+.imagestripbanner:before {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+@media screen and (min-width: 605px) {
+  .imagestripbanner:before {
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .imagestripbanner {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .imagestripbanner {
+    height: 700px;
+  }
+}
+.imagestripbanner h1 {
+  text-align: center;
+  color: #FFF !important;
+  margin: 30px;
+}
+.imagestripbanner h2 {
+  text-align: center;
+  color: #FFF !important;
+  margin: 30px;
+}
+
+.textimage {
+  margin: 0px auto;
+  width: 90%;
+  max-width: var(--content-small);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(10px, auto) minmax(10px, auto);
+  gap: 40px 40px;
+  grid-auto-flow: row;
+  grid-template-areas: "textarea" "imagearea";
+}
+.textimage .textarea {
+  grid-area: textarea;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.textimage .textarea h1 {
+  color: var(--w-green);
+  font-size: 24px;
+}
+.textimage .imagearea {
+  grid-area: imagearea;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.textimage .imagearea img {
+  max-width: 300px;
+}
+@media only screen and (min-width: 700px) {
+  .textimage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(10px, auto);
+    grid-template-areas: "textarea imagearea";
+  }
+  .textimage.left {
+    grid-template-areas: "imagearea textarea";
+  }
 }
 
 #tinymce {

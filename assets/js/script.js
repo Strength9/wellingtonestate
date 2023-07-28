@@ -126,3 +126,12 @@ if ($(".comslider").length > 0) {
       comslider.mount();
    } );
   }
+  
+
+  jQuery(".splasharrow").on("click", function(e) {
+    e.preventDefault();
+    var target = '.scroolto';
+    jQuery("html, body").animate({
+    scrollTop: ($(target).offset().top-98)
+    }, 3000);
+  });

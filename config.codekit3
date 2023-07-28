@@ -1055,6 +1055,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_imagestripandtext.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_imagestripandtext.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_innerhero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1125,6 +1140,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_table.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_textandimage.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_textandimage.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1978,6 +2008,14 @@
       "oAP" : "\/template-parts\/block\/block_bannerlink.php",
       "oF" : 0
     },
+    "\/template-parts\/block\/block_blocklinks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_blocklinks.php",
+      "oF" : 0
+    },
     "\/template-parts\/block\/block_businessareas.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2000,6 +2038,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/block\/block_imagebanner.php",
+      "oF" : 0
+    },
+    "\/template-parts\/block\/block_imagetextdivider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/block_imagetextdivider.php",
       "oF" : 0
     },
     "\/template-parts\/block\/block_innerhero.php" : {
@@ -2112,6 +2158,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/block\/internals_imagegrid.php",
+      "oF" : 0
+    },
+    "\/template-parts\/block\/internals_textandimage.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/block\/internals_textandimage.php",
       "oF" : 0
     },
     "\/template-parts\/block\/internals_textandtext.php" : {
