@@ -1,0 +1,136 @@
+
+
+  .sustainabilitycontainer {
+	  	width: 95%;
+		  margin:0 auto;
+			max-width: 1300px;
+		
+		min-height:100px;
+		display: grid; 
+		grid-template-columns: repeat(6, 1fr); 
+		grid-template-rows:  minmax(20px,auto) 50px 180px; 
+		gap: 0px 0px; 
+		  
+		  
+		.text {
+			  box-sizing:border-box;
+			  padding:30px;
+			  background-color:var(--w-green);
+			  color:#fff;
+		}
+		  
+		.topimage1, .topimage2, .topimage3 { 
+			background-color: #eee;
+		}
+
+		
+		
+		>div {
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		
+		.text {
+			grid-column:1 / 7;
+			grid-row: 1/ 3;
+			padding-bottom:40px;
+			
+			
+			h2{
+				font-size:24px;
+			}
+			p {
+				color:#FFF;
+				font-size: 14px;
+				line-height: 25px;
+				margin-bottom: 30px;
+				margin-top: 15px;
+			}
+			
+		}
+		.topimage1 {
+			z-index:1;
+			grid-column: 2 /6;
+			grid-row: 2/4;
+		}
+		.topimage2 { 
+				display:none;
+			}
+		.topimage3 {
+				display:none;
+			}
+		.fullimage {
+			display:none;
+			z-index:4;
+			grid-column:2 / 6;
+			grid-row: 2/ 3;
+		}
+		
+		@media only screen and (min-width:800px) {
+			
+			width:90%;
+			grid-template-columns: repeat(17,1fr); 
+			  grid-template-rows:  repeat(12,1fr); 
+			  gap: 0px 0px;
+			
+			.topimage2, .topimage3, .fullimage {
+				display:block;
+			}
+			.text {  
+				padding:40px 40px 0px;
+				grid-column:1 / 10;
+				grid-row: 2/ 12;
+				z-index:5;
+			}
+			.topimage1 {
+				z-index:1;
+				grid-column: 8 / 17;
+				grid-row: 1 / 5;
+			}
+			.topimage2 { 
+					z-index:3;
+					grid-column: 11 / 18;
+					grid-row: 4 / 10;
+				}
+			.topimage3 {
+					z-index:2;
+					grid-column: 8 / 17;
+					grid-row: 9 / 13;
+				}
+			.fullimage {
+				z-index:4;
+				grid-column:9 / 17;
+				grid-row: 3/ 11;
+			}
+			
+			&.right {
+				.text { 
+					
+					grid-column: 9 / 18;
+					grid-row: 2/ 12;
+				}
+				.fullimage {
+					grid-column:2 / 10;
+					grid-row: 3/ 11;
+				}
+				.topimage1 {
+					grid-column: 2 / 11;
+					grid-row: 1 / 5;
+				}
+				.topimage2 { 
+						grid-column: 1 /8;
+						grid-row: 4 / 10;
+						
+					}
+				.topimage3 {
+						grid-column: 2 / 11;
+						grid-row: 9 / 13;
+					}
+			}
+		}
+		
+		
+  }
+
+

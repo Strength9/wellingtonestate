@@ -96,8 +96,27 @@ p {
 		max-width:630px;
 	}
 
+ol, ul {
+	margin:15px auto 30px;
+	max-width:800px;
+	font-size:14px;
+	line-height: 25px;
+	font-family: var(--font-base);
+	color: var(--w-green);
+	font-weight: 400;
+	
+	li {
+		margin-bottom:10px;
+	}
+	
+&.alignleft {
+	text-align:left !important;
+}
 
-
+&.nobull {
+	list-style:none;
+}
+}
 
 
 &.fullwidth {

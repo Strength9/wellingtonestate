@@ -173,7 +173,7 @@ h2.latestjobs {
 				 		padding: 6px 20px;
 				 		-webkit-appearance: none;
 				 		margin-right:20px;
-				 		width:190px;
+				 		width:220px;
 				 		border: 1px solid rgb(221, 223, 227) ;
 				  		box-shadow:rgba(0, 0, 0, 0.2) 0px 3px 15px -5px;
 						  
@@ -269,9 +269,16 @@ h2.latestjobs {
  
  
  section.jobdata {
+	 width:90%;
+	 max-width:var(--content-normal);
+	 margin:100px auto;
+	 @media only screen and (min-width:1300px) {
+		width:100%;
+	  
+	 }
 	 
 	 .container {
-		 margin:100px auto;
+		 margin:0px auto 0;
 		 width:90%;
 		 max-width:600px;
 		 display: grid; 
@@ -292,14 +299,32 @@ h2.latestjobs {
 			 }
 			 
 			 @media only screen and (min-width:1000px) {
+				 
 				 gap:50px;
 				  grid-template-columns: 1fr 500px; 
 				  grid-template-areas: ". ."; 
 			  }
+			  
+			  @media only screen and (min-width:1300px) {
+				   width:100%;
+				 
+				}
 			 
 			 
 			 .details {
 				 
+				#jobsbutton {
+					 display:inline-block;
+					 margin-left:0;
+					 margin-right:auto;
+				 }
+				 
+				 hr.spacer {
+					 border:0px;
+					 height:5px;
+					 margin:0;
+					 padding:0;
+				 }
 				
 				   font-family: var(--font-base);
 				 color: var(--w-green);
@@ -309,6 +334,12 @@ h2.latestjobs {
 				 margin-bottom: 25px;
 				 text-align:left;
 				 
+				 
+				 h1 {
+					 margin:0;
+					 padding:0;
+					 display:block;
+				 }
 				 p {
 					 font-size: 16px;
 					  line-height: 25px;
@@ -348,11 +379,40 @@ h2.latestjobs {
 				 
 			  }
 			 .form {
+				 background-color:#FFF;
+				 border: 1px solid #dddfe3;
+				 display: flex;
+				 flex-direction: column;
+				 flex-wrap: nowrap;
+				 justify-content: center;
+				 align-content: center;
+				 align-items: center;
+				 padding:40px;
+				 margin:0;
+				 
+				 h2 {
+					  
+				  }
+				  
+				  p {
+					 
+					  text-align:center;
+				  }
+				  
+				 
+				 
 				 form {
+					width:100%; 
 				 	box-sizing: border-box;
-					 padding:40px 40px;
-					 background-color:#FFF;
-					 border: 1px solid #dddfe3;
+					 padding:0px 0px;
+					
+					
+					p {
+						text-align:left;
+						margin-left:0;
+						margin-right:0;
+					}
+					 
 					 
 					 h3 {
 						 color:var(--w-green);
@@ -365,6 +425,8 @@ h2.latestjobs {
 					 
 					 
 					 label {
+						 width:100%;
+						 text-align:left !important;
 						 font-weight:normal;
 						 display:block;
 						 color: var(--w-green);

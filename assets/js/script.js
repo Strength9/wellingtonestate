@@ -1,4 +1,3 @@
-
   jQuery('#EstatesAction').click(function (e) {
    jQuery('#toggle').addClass('open');
    jQuery(this).toggleClass('active');
@@ -89,6 +88,27 @@ if (document.body.classList.contains('dynamicdisplay')) {
           jQuery("#searchholder").toggleClass("search-show"); //you can list several class names 
           e.preventDefault();
         });
+if ($(".businessslider").length > 0) {
+    document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.businessslider', {
+      type  : 'fade',
+      rewind: true,
+     autoplay:true,
+      
+    } );
+          splide.mount();
+          } ); 
+};
+  
+if ($(".jobssslider").length > 0) {
+  document.addEventListener( 'DOMContentLoaded', function() {  
+      var jobsplide = new Splide( '.jobssslider', {
+      type  : 'fade',
+      rewind: true,
+      arrowPath: 'M422.6 278.6L445.3 256l-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6L322.8 224 32 224 0 224l0 64 32 0 290.7 0-89.4 89.4L210.8 400 256 445.3l22.6-22.6 144-144z',
+     autoplay:true,
 
-   
-    
+    } );
+      jobsplide.mount();
+  } );
+ }

@@ -75,13 +75,45 @@ $data = '';
 <hr class="jobsdiv">
 	<script>
 	
-	jQuery(document).on("change", "#location_tax_joblocation, #contract_tax_jobtype, #category_tax_jobcat", function() {
+	jQuery(document).on("change", "#location_tax_joblocation, #contract_tax_jobtype, #category_tax_jobcat", function(e) {
+	 e.preventDefault();
+	   console.clear();
+		
+			var search = jQuery('#searchfilter').val();
+		 var location = jQuery('#location_tax_joblocation').val();
+		 var contract = jQuery('#contract_tax_jobtype').val();
+		 var jobcat = jQuery('#category_tax_jobcat').val();
+		 
+			 jQuery.ajax({
+			   type: 'POST', 
+			   dataType: 'json',
+			   url: frontend_ajax_object.ajaxurl,  
+			   data: {
+				   action: 'filter_projects', 
+					 security:  frontend_ajax_object.ajax_nonce,
+					 search :search,
+					 location :  location,
+					contract : contract,
+					jobcat : jobcat
+				  
+			   },
+			 success: function(response) {
+				  jQuery('.jobslisting').html(response.data);
+			 }
+			   
+		 });
+	 
+			
+	 });
+	
+	jQuery(document).on("click", "#searchsubmit", function(e) {
+		e.preventDefault();
 	  console.clear();
 	   
-	var location = jQuery('#location_tax_joblocation').val();
-	   var contract = jQuery('#contract_tax_jobtype').val();
-	    var jobcat = jQuery('#category_tax_jobcat').val();
-		
+	   	var search = jQuery('#searchfilter').val();
+		var location = jQuery('#location_tax_joblocation').val();
+		var contract = jQuery('#contract_tax_jobtype').val();
+		var jobcat = jQuery('#category_tax_jobcat').val();
 		
 			jQuery.ajax({
 			  type: 'POST', 
@@ -89,42 +121,15 @@ $data = '';
 			  url: frontend_ajax_object.ajaxurl,  
 			  data: {
 				  action: 'filter_projects', 
-				  security:  frontend_ajax_object.ajax_nonce,
-				  location :  location,
-			     contract : contract,
-			     jobcat : jobcat
+					security:  frontend_ajax_object.ajax_nonce,
+					search :search,
+					location :  location,
+				   contract : contract,
+				   jobcat : jobcat
 				 
 			  },
 			success: function(response) {
 				 jQuery('.jobslisting').html(response.data);
-				 console.log(response.message);
-			}
-			  
-		});
-
-		   
-	});
-	
-	jQuery(document).on("click", "#searchsubmit", function(e) {
-		e.preventDefault();
-	  console.clear();
-	   
-	var search = jQuery('#searchfilter').val();
-		
-		
-			jQuery.ajax({
-			  type: 'POST', 
-			  dataType: 'json',
-			  url: frontend_ajax_object.ajaxurl,  
-			  data: {
-				  action: 'search_projects', 
-				  security:  frontend_ajax_object.ajax_nonce,
-				  search :search
-				 
-			  },
-			success: function(response) {
-				 jQuery('.jobslisting').html(response.data);
-				 console.log(response.message);
 			}
 			  
 		});

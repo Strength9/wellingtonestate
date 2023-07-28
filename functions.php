@@ -10,6 +10,18 @@ require_once(dirname(__FILE__) . '/assets/acf_functions.php');
 /* Remove the auto p tag removal
 /*-----------------------------------------------------------------------------------*/
 
+function wes_enqueue_scripts() {
+	   wp_enqueue_script( 'frontend-ajax', get_template_directory_uri() . '/assets/js/ac.js','','',true); 
+	   wp_localize_script( 'frontend-ajax', 'frontend_ajax_object',
+			 array( 
+				   'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				   'ajax_nonce' => wp_create_nonce('secure_nonce_name'),
+			 )
+	   );
+ }
+ add_action( 'wp_enqueue_scripts', 'wes_enqueue_scripts' );
+
+
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
@@ -147,7 +159,7 @@ add_filter('image_size_names_choose', 'post_image_sizes');
 		wp_enqueue_script( 'jquery-core' );
 		wp_enqueue_script('include_modernizr', get_stylesheet_directory_uri().'/assets/js/modern.js');
 		wp_enqueue_script( 'xray_script', get_template_directory_uri() . '/assets/js/script.js','','',true);
-		wp_enqueue_script( 'xray_slider', get_template_directory_uri() . '/assets/js/slider.js','','',true);
+		wp_enqueue_script( 'xray_slider', get_template_directory_uri() . '/assets/js/splide.min.js','','',true);
 		
 
 

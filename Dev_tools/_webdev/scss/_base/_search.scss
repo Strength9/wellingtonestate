@@ -69,7 +69,7 @@ div.searchholder form {
 	padding: 10px;
 	text-align: center
 }
-
+ 
 div.searchholder form input {
 	width: 90%;
 	max-width: 450px;
@@ -128,4 +128,23 @@ div.searchholder form :invalid {
 	-ms-touch-action: pan-y;
 	touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent
+}
+
+
+#searchform {
+::-webkit-input-placeholder {
+	color:red;
+}
+
+::-moz-placeholder {
+	color:red;
+}
+
+::-ms-placeholder {
+	color:red;
+}
+
+::placeholder {
+	color:red;
+}
 }

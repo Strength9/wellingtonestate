@@ -1,0 +1,87 @@
+.businessslider {
+	height: calc(100vh - 95px);
+
+	
+	
+	.splide__slide {
+		height: calc(100vh - 95px);
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	.databox {
+		background-color: #fff;
+		width:90%;
+		max-width: 393px;
+		background-color: #fff;
+		margin: 50px auto 0;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 50px;
+		
+		@media only screen and (min-width:800px) {
+			
+			margin: 100px 0 0 75px;
+		}
+		
+		h2 {
+			color:var(--w-green);
+			font-size: 33px;
+			text-transform: uppercase;
+			margin-bottom: 17px;
+			line-height: 34px;
+		}
+		
+		p {
+			text-align:center;
+		}
+		
+		a {
+			font-family: "Montserrat", sans-serif;
+			color: #FFF;
+			border: 1px solid #004a33;
+			background-color: #004a33;
+			transition: all 0.25s;
+			padding: 6px 20px;
+			text-transform: uppercase;
+			display: inline-block;
+			transition: all 0.25s;
+			margin-top: 10px;
+		}
+	}
+	
+	.splide__arrow {
+		height:50px;
+		width:50px;
+	}
+	
+	.splide__pagination {
+		bottom:60px;
+		
+		li {
+			button.splide__pagination__page {
+				background: transparent;
+				border: 3px solid #FFF;
+				border-radius: 50%;
+				display: inline-block;
+				height: 15px;
+				width:15px;
+				margin: 3px;
+				opacity: 0.7;
+				padding: 0;
+				position: relative;
+				transition: none !important;
+				
+				&:is-active {
+					background-color: var(--w-green) !important;
+					border: 3px solid #FFF;
+					border-radius: 50%;
+					height: 15px;
+					width:15px;
+					transform: scale(1) !important;
+				}
+				
+			}
+		}
+	}
+}

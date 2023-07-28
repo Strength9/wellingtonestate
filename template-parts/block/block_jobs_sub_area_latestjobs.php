@@ -104,3 +104,63 @@ $data = '';
 </div>
 <hr class="jobsdiv">
 	
+		<script>
+		
+		jQuery(document).on("change", "#location_tax_joblocation, #contract_tax_jobtype, #category_tax_jobcat", function() {
+		  console.clear();
+		   
+		var location = jQuery('#location_tax_joblocation').val();
+		   var contract = jQuery('#contract_tax_jobtype').val();
+			var jobcat = jQuery('#category_tax_jobcat').val();
+			
+			console.log (location);
+			
+				jQuery.ajax({
+				  type: 'POST', 
+				  dataType: 'json',
+				  url: frontend_ajax_object.ajaxurl,  
+				  data: {
+					  action: 'filter_projects', 
+					  security:  frontend_ajax_object.ajax_nonce,
+					  location :  location,
+					 contract : contract,
+					 jobcat : jobcat
+					 
+				  },
+				success: function(response) {
+					 jQuery('.jobslisting').html(response.data);
+					 console.log(response.message);
+				}
+				  
+			});
+	
+			   
+		});
+		
+		jQuery(document).on("click", "#searchsubmit", function(e) {
+			e.preventDefault();
+		  console.clear();
+		   
+		var search = jQuery('#searchfilter').val();
+			
+			
+				jQuery.ajax({
+				  type: 'POST', 
+				  dataType: 'json',
+				  url: frontend_ajax_object.ajaxurl,  
+				  data: {
+					  action: 'search_projects', 
+					  security:  frontend_ajax_object.ajax_nonce,
+					  search :search
+					 
+				  },
+				success: function(response) {
+					 jQuery('.jobslisting').html(response.data);
+					 console.log(response.message);
+				}
+				  
+			});
+		
+			   
+		});
+	</script>	
