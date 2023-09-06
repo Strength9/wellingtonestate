@@ -1101,7 +1101,7 @@ text-align:center;
   
   @media only screen and (max-width:510px) {
 	  .leaflet-popup-content-wrapper {
-	 	 display:none;
+	 	 padding:3px;
  	 }
   }
   @media only screen and (min-width:880px) {
@@ -1111,7 +1111,44 @@ text-align:center;
 	}
 	
 	.marker-label {
-		
-		background-color:#FFF;
+
 		text-align:center;
+		font-weight:500;
+
+		@media only screen and (max-width:600px) {
+			display:none;
+		}
+	}
+
+
+
+	.pp_farmshop {
+		
+		width:120px;
+		padding:4px 0;
+		margin-top:-10px !important;
+	}
+	.pp_warms {
+		
+		width:150px;
+		padding:4px 0;
+		margin-top:-43px !important;
+		margin-left:165px !important;
+	}
+
+	.pp_danes {
+		
+		
+		padding:4px 5px;
+		
+	}
+	.pp_house  {
+		
+		margin-top:-7px !important;
+		padding:4px 5px;
+		
+	}
+	.pp_wes {
+		padding:3px 5px;
+		margin-top:-9px !important;
 	}

@@ -110,12 +110,13 @@
 					grid-template-columns: 1fr 1fr 1fr; 
 					grid-template-areas:  ". . ."; 
 				}
-				
+				font-weight:400;
 				
 				h2 {
 					text-decoration: underline;
 				}
 				p {
+					font-weight:400;
 					
 				}
 				a {color:var(--w-green);}
@@ -126,6 +127,7 @@
 					display:inline-block;
 					margin:20px 0;
 					position:relative;
+					color:var(--w-gold);
 					
 					&:after  {
 						content: "";

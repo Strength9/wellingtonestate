@@ -160,7 +160,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.368,-0.9743709999999908])
-		.setContent('<p class="marker-label">WELLINGTON<br />FARM SHOP</p>')
+		.setContent('<p class="marker-label pp_farmshop">WELLINGTON<br />FARM SHOP</p>')
 		.addTo(map);
 		
 
@@ -190,7 +190,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.349707,-0.995883])
-		.setContent('<p class="marker-label">STRATFIELD SAYE HOUSE</p>')
+		.setContent('<p class="marker-label pp_house">STRATFIELD SAYE<br>HOUSE</p>')
 		.addTo(map);
 
 	var markerLabel = L.popup({
@@ -199,7 +199,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.358800,-1.004482])
-		.setContent('<p class="marker-label">WELLINGTON ESTATE OFFICE<br />& WELLBEING</p>')
+		.setContent('<p class="marker-label pp_wes">WELLINGTON ESTATE OFFICE<br>& WELLBEING</p>')
 		.addTo(map);
 
 	var markerLabel = L.popup({
@@ -208,7 +208,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.331886,-0.987825])
-		.setContent('<p class="marker-label">DANESHILL SCHOOL</p>')
+		.setContent('<p class="marker-label pp_danes">DANESHILL SCHOOL</p>')
 		.addTo(map);
 
 	var markerLabel = L.popup({
@@ -217,6 +217,6 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.337921, -0.999647])
-		.setContent('<p class="marker-label">THE WELLINGTON<br>ARMS</p>')
+		.setContent('<p class="marker-label pp_warms">THE WELLINGTON<br>ARMS</p>')
 		.addTo(map);
 	</script>

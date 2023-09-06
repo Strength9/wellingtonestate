@@ -7,11 +7,53 @@ Block SVG: block_template.svg
 Block Category: wellington
     
     
-    
-    title_area
-    job_decriptions
-    job_links
 */
+
+if (!get_field('number_of_jobs')) {
+    $numberofjobs = 5;
+} else {
+    $numberofjobs = get_field('number_of_jobs');
+};
+$args = array(
+		   'post_type' => 'job-openings',
+		'posts_per_page' =>  $numberofjobs,
+		'meta_query' => array(
+			array(
+				'key' => 'wjs_s9plugin_positionfilled',
+				'value' => 0,
+				'compare' => '='
+			),    
+		 ),
+		 'order_by' => 'date',
+		 'order' => 'desc',
+   );
+   
+	 $projects = new WP_Query( $args);
+
+$data = '';
+
+ if($projects->have_posts()):
+
+	  while($projects->have_posts()) : $projects->the_post();
+		  $jobid = get_the_ID();
+
+         
+		$data .= '<li class="splide__slide">  
+        <div class="imageside" style="background-image:url('.get_field('job_slider_image',  $jobid).');"> </div>
+        <div class="jobdatabox">
+               <hr>
+              
+               <img src="/wp-content/uploads/2023/07/Duke.png">
+               <h4>Latest Jobs</h4>
+               <h2>'.get_the_title().'</h2>
+               <p>'.get_the_excerpt().'</p>
+               <a href="'.get_permalink().'" title="Find Out More">Find Out More</a>
+          </div>
+    </li>';
+	  endwhile;
+wp_reset_postdata();
+endif;
+
  $linkbut = '';
  $link = get_field('job_links');
  if( $link ): 
@@ -22,53 +64,15 @@ Block Category: wellington
     $linkbut = '<a href="'.esc_url( $link_url ).'" target="'.esc_attr( $link_target ).'">'.esc_html( $link_title ).'</a>';
  endif;
  
- // Check rows existexists.
- if( have_rows('jobs_slider') ) {
- 
- $slides = ' <div class="splide__track"><ul class="splide__list">';
-     // Loop through rows.
-     while( have_rows('jobs_slider') ) : the_row();
- 
-
-        if( get_sub_field('side_image') ) {
-             $imgbg = 'style="background-image:url('.get_sub_field('side_image').');"';
-         } else {
-            $imgbg = '';
-         }
-         
-         $jobid = get_sub_field('job_details');
-         
-         
-         // Do something...
-         $slides .= '<li class="splide__slide">  
-             <div class="imageside" '.$imgbg .'> </div>
-             <div class="jobdatabox">
-                    <hr>
-                    <img src="/wp-content/uploads/2023/07/Duke.png">
-                    <h4>Latest Jobs</h4>
-                    <h2>'.get_the_title($jobid).'</h2>
-                    <p>'.get_the_excerpt($jobid).'</p>
-                    <a href="'.get_permalink($jobid).'" title="Find Out More">Find Out More</a>
-               </div>
-         </li>';
-     // End loop.
-     endwhile;
- $slides .= '</ul> </div>';
- // No value.
- } else {
-    $slides = 'Add Sliider Details';
- };
- 
  
   ?>
  <section class="jobsintro" >
         <h1><?php echo get_field('title_area');?></h1>
         <p><?php echo get_field('job_decriptions');?></p>
-        <?php echo   $linkbut;?>
+        <?php echo $linkbut;?>
  </section>
- <section class="splide jobssslider" aria-label="Splide Basic HTML Example">
-   
-    
-        <?php echo $slides;?>
+ <section class="splide jobssslider">
+
+        <?php echo '<div class="splide__track"><ul class="splide__list">'.$data.'</ul> </div>';?>
    
   </section>

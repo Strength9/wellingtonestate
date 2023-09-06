@@ -8,11 +8,13 @@
 		  grid-auto-flow: row;
 		 grid-template-areas: 
 		 "titlearea" "detailarea"; 
+		 padding:0 20px;
 
 		 .titlearea { grid-area: titlearea; padding-bottom:10px;}
 		 .detailarea { grid-area: detailarea; }
 	
 			@media only screen and (min-width:700px) {
+				
 				grid-template-columns: 1fr 1fr;
 				grid-template-rows:  minmax(10px,auto);
 				grid-template-areas: 

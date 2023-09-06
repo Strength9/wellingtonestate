@@ -131,10 +131,10 @@ function s9ACF_tellink($fieldname, $postid = '', $tag = '', $titletext ='', $ext
 	if ($tag != '') { $sttag = '<'.$tag.$class.'>'; $edtag = '</'.$tag.'>'; }
 	if ($extratext != '') { $extra = $extratext.' '; } else { $extra = ''; };
 	if ($titletext != '') { $title =' title= "'.$titletext.'"'; };
-
+	$display = $link;
 	$link = str_replace(" ", "", str_replace("(0)", "",  	$link));
 	
-	return $sttag.'<a href="tel:'.$link.'"'.$title.'>'.$extra.	$link.'</a>'.$edtag;
+	return $sttag.'<a href="tel:'.$link.'"'.$title.'>'.$extra.	$display.'</a>'.$edtag;
 }
 
 

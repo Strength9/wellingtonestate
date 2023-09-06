@@ -38,4 +38,4 @@ if( !empty( $block['data']['_is_preview'] ) ) { echo' <img src="'.get_stylesheet
 	</div>
 <div class="headerlarge" <?php echo ' style=" background-image:url('. s9ACF_textfield('background_image', '', '', '', '', 'no').') !important;  background-position: '.s9ACF_textfield('background_position',  '', '', '', '', 'no').' !important;"';?>></div>
 </div>
-<div class="scroolto"></div>';
+<div class="scroolto"></div>

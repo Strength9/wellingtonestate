@@ -4,7 +4,7 @@ Theme URI: https://strength9.co.uk
 Description: XRAY Naked Base Theme
 Author: Dave Pratt
 Author URI: https://strength9.co.uk
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: xray
 License: GNU General Public License v3 or later.
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -20,7 +20,7 @@ Tags: naked, bare, quick
 	--page-background-color: rgba(246, 242, 235, 1);
 	--navwidth: 320px;
 	--font-base: Montserrat, sans-serif;
-	--font-base-heading: "clarendon-urw",serif;
+	--font-base-heading: 'Clarendon Text';
 	--base-colour: rgb(0, 0, 0);
 	
 	--w-neutral: rgb(246, 242, 235);
@@ -32,7 +32,7 @@ Tags: naked, bare, quick
 	--standardgap: 50px;
 	--doublegap:  100px;
 
-	--quadgap:  100px;
+	--quadgap:  152px;
 	
 	--table-cell-border: rgba(0, 74, 51, 0.182);
 	--table-border: red;
@@ -116,7 +116,7 @@ hr {
 	h3,h1,h2 { 	
 		color:var(--w-green);
 		order: 1;
-		font-size:65px;
+		font-size:35px;
 		line-height:1;
 		margin:20px 0 0;
 		padding:0;
@@ -146,6 +146,19 @@ hr {
 			background-color:var(--w-gold);
 		}
 	}
+
+	@media only screen and (min-width:500px) {
+
+		h3 {
+			font-size:45px;
+		}
+	}
+	@media only screen and (min-width:750px) {
+
+		h3 {
+			font-size:65px;
+		}
+	}
 }
 
 body:not(.home) {
@@ -162,8 +175,8 @@ body:not(.home) {
 	padding: 6px 24px 8px;
 	border-radius: 3px;
 	position: inherit;
-	font-family:var(--font-base-heading);
-	font-weight: 300;
+	font-family:var(--font-base);
+	font-weight: 500;
 	&:after {
 		display:none;
 	}

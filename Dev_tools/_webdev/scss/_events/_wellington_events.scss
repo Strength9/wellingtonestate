@@ -18,6 +18,7 @@ $s9w_hovercol: #c49a6c;
     color: $s9w_defaulttxtcolor;
     font-size:15px;
     padding-bottom:5px !important;
+    font-weight:400 !important;
 }
 @mixin s9w_event_card_eventtitle {
     color: $s9w_defaulttxtcolor; 
@@ -28,6 +29,7 @@ $s9w_hovercol: #c49a6c;
     color: $s9w_defaulttxtcolor;
     font-size:15px;
     margin-top:0px;
+    font-weight:400 !important;
 }
 @mixin s9w_event_card_shortday {
     color: $s9w_defaulttxtcolor; 
@@ -167,6 +169,7 @@ $s9w_hovercol: #c49a6c;
 @mixin s9w_event_grid_filter_label {
     margin:10px 0px 5px;
    display:block;
+   font-family:var(--font-base);
     @media only screen and (min-width:900px) {
         display:inline-block;
         margin:0px 10px 0px 0px !important;
@@ -208,8 +211,8 @@ $s9w_hovercol: #c49a6c;
   padding: 6px 24px 8px;
   border-radius: 3px;
   position: inherit;
-  font-family:var(--font-base-heading);
-  font-weight: 300;
+  font-family:var(--font-base);
+  font-weight: 500;
   &:after {
      display:none;
   }

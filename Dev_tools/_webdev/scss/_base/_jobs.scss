@@ -1,5 +1,5 @@
 
-.sitejobareas {
+.sitejobareas{
 	padding:0 20px;
 	max-width:1140px;
 	margin:150px auto;
@@ -52,6 +52,7 @@
 					text-transform:uppercase;
 					font-family: var(--font-base);
 					color:#FFF;
+					font-weight:500;
 				}
 				a {
 					display:inline-block;
@@ -249,6 +250,7 @@ h2.latestjobs {
 						 list-style: none;
 						 margin:4px 0;
 						 padding:0;
+						 font-weight:400;
 	 						a {
 								 display:block;
 								 margin-top:20px;
@@ -468,3 +470,98 @@ h2.latestjobs {
 	 
 	 
  }
+
+
+ .relatedeventslisty {
+	padding:0 20px;
+	max-width:1140px;
+	margin:20px auto;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	
+	
+		
+		
+		@media only screen and (min-width:550px) {
+			
+			
+		}
+		
+		@media only screen and (min-width:1000px) {
+			max-width:1200px;
+			
+			
+		}
+		
+		@media only screen and (min-width:1280px) {
+			flex-wrap: nowrap;
+			padding:0;
+		}
+		
+		.site {
+			display:block;
+			width:320px;
+			margin:15px;
+
+			@media only screen and (min-width:550px) {
+			
+				flex: 0 1 320px;
+			}
+			
+			@media only screen and (min-width:1000px) {
+				max-width:1200px;
+				flex: 0 1 360px;
+				
+			}
+			
+			@media only screen and (min-width:1280px) {
+				flex: 0 1 380px;
+				padding:0;
+			}
+
+			
+			.siteimage {
+				background-color:red;
+				background-position:center center;
+				background-size:cover;
+				background-repeat:no-repeat;
+				width:100%;
+				height:250px;
+				display:block;
+			}
+			.sitetext {
+				height: auto;
+				padding:30px 0 0;
+				display:block;
+				text-align:center;
+				background-color:var(--w-green);
+				h3 {
+					display:block;
+					text-transform:uppercase;
+					font-family: var(--font-base);
+					color:#FFF;
+					font-weight:500;
+				}
+				a {
+					display:inline-block;
+					background-color: var(--w-gold);
+					color:#FFF;
+					font-family: var(--font-base);
+					font-size: 15px;
+					font-weight: 500;
+					padding:15px 30px;
+					border-radius:0px;
+					margin:30px auto 30px;
+					
+					&:hover {
+						background-color: #FFF;
+						color:var(--w-gold);
+					}
+				}
+			}
+		}
+}
