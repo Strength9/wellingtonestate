@@ -1,14 +1,15 @@
 #mc_embed_signup{
-	background:var(--page-background-color);
+	background:var(--w-green);
 	 clear:left;
 	font-family:var(--font-base);
 	color:var(--w-green);
-	 margin:0px auto;
+	 margin:0px auto 100px;
 	 max-width:var(--content-small);
+	 padding:30px 0;
 
 	 h2 {
-		 text-align:center;
-		 color: var(--w-green);
+		 text-align:left;
+		 color:#FFF;
 		 font-family:var(--font-base-heading);
 		 font-size: 18px;
 		 font-weight: 300 !important;
@@ -21,7 +22,7 @@
 	 
 	 label {
 		 font-family:var(--font-base);
-		 color:var(--w-green);
+		 color: #FFF;
 		 font-weight: 300 !important;
 	}
 	
@@ -30,13 +31,13 @@
 	}
 	
 	.button {
-		margin:0px auto 50px !important;
-		background-color: var(--w-green) !important;
-		color:#FFF !important;
+		margin:0px auto 0px !important;
+		background-color: #FFF !important;
+		color:var(--w-green) !important;
 		font-size: 15px !important;
 		padding: 6px 24px 8px ;
 		height:38px!important;
-		border-radius: 3px !important;
+		border-radius: 0px !important;
 		position: inherit !important;
 		font-family:var(--font-base-heading) !important;
 		font-weight: 300 !important;

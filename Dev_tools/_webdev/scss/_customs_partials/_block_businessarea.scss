@@ -18,6 +18,7 @@
 		box-sizing: border-box;
 		text-align: center;
 		padding: 50px;
+		height: 352px;
 		
 		@media only screen and (min-width:800px) {
 			
@@ -38,15 +39,22 @@
 		
 		a {
 			font-family: "Montserrat", sans-serif;
-			color: #FFF;
-			border: 1px solid #004a33;
-			background-color: #004a33;
+			color: var(--w-green);
+			border: 1px solid var(--w-green);
+			background-color: #FFF;
 			transition: all 0.25s;
 			padding: 6px 20px;
 			text-transform: uppercase;
 			display: inline-block;
 			transition: all 0.25s;
-			margin-top: 10px;
+			margin-top: 20px;
+			font-size: 14px;
+			font-weight:400;
+			
+			&:hover {
+				background-color: var(--w-green);
+				color:#FFF;
+			}
 		}
 	}
 	

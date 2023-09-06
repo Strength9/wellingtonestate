@@ -12,6 +12,7 @@
 		font-size:40px;
 	}
 	
+	/*
 	a {
 		text-align:center;
 		margin:30px auto ;
@@ -35,6 +36,27 @@
 			color:var(--w-gold);
 		}
 	}
+*/
+a {
+	font-family: "Montserrat", sans-serif;
+	color: var(--w-green);
+	border: 1px solid var(--w-green);
+	background-color: transparent;
+	transition: all 0.25s;
+	padding: 6px 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: all 0.25s;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight:400;
+	
+	&:hover {
+		background-color: var(--w-green);
+		color:#FFF;
+	}
+}
+
 }
 
 .jobssslider {

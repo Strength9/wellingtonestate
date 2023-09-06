@@ -76,8 +76,36 @@
 				@media only screen and (min-width: 605px) {
 					width:400px;
 				}
-				img {width:100%;
-					max-width: 289px;
+				img {width:118px;
+				}
+				
+				svg.head {
+					width:42px !important;
+				}
+				svg.text {
+					margin:5px auto;
+					display:block;
+					&.careers {
+						height:21px;
+					}
+						&.estate {
+							height:21px;
+						}
+						&.sustainability {
+							height:21px;
+						}
+						&.community {
+							height:21px;
+						}
+						&.house {
+							height:47px;
+						}
+						&.wellington{
+							height:21px;
+						}
+						&.whatson{
+							height:21px;
+						}
 				}
 				p {
 					margin-top: 20px;

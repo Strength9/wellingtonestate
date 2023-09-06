@@ -649,6 +649,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/svg\/duke-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/duke-logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/svg\/facebook-square.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -734,6 +744,96 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/img\/svg\/strength9.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/estate.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/estate.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/head.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/head.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/community.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/community.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/estate.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/estate.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/house.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/house.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/jobopenings.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/jobopenings.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/sustainability.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/sustainability.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/wellington.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/wellington.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/svg\/SVG\/SVG\/whatson.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/svg\/SVG\/SVG\/whatson.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -825,7 +925,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_admin_overides.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -840,7 +940,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_animation.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -855,7 +955,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_base_style.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -870,7 +970,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_fonts.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -885,7 +985,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_global.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -900,7 +1000,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_jobs.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -915,7 +1015,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_search.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -930,7 +1030,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_base\/_slider.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -945,7 +1045,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_bannerlink.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -960,7 +1060,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_businessarea.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -975,10 +1075,22 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_comslider.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_contact_form.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_contact_form-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_contact_form.scss" : {
       "aP" : 0,
@@ -990,7 +1102,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_contact_form.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1005,7 +1117,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_eventshero.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1020,7 +1132,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_greenblockimages.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1035,7 +1147,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_imagebanner.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1050,7 +1162,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_imagegrid.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1065,7 +1177,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_imagestripandtext.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1080,7 +1192,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_innerhero.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1095,7 +1207,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_newjobs.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1110,7 +1222,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_para.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1125,7 +1237,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_splashscreen.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1140,7 +1252,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_table.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1155,7 +1267,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_textandimage.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1170,7 +1282,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_textandtext.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1185,7 +1297,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block_whysy.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1200,7 +1312,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_block.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1215,7 +1327,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_mailchimp.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1230,7 +1342,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_mapblock.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1245,7 +1357,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_paritals.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1260,7 +1372,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_search.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1275,7 +1387,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_customs_partials\/_table.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1290,7 +1402,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_event_cards.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1305,7 +1417,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_events_filter.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1320,7 +1432,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_events_grid.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1335,7 +1447,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_eventshero.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1350,7 +1462,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_single-wellington-events.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1365,7 +1477,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_events\/_wellington_events.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1380,7 +1492,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_page_structure\/_footer.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1395,22 +1507,10 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/Dev_tools\/_webdev\/scss\/_page_structure\/_header.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/Dev_tools\/_webdev\/scss\/style-editor.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Dev_tools\/_webdev\/scss\/style-editor-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/Dev_tools\/_webdev\/scss\/style-editor.scss" : {
       "aP" : 0,
@@ -1420,24 +1520,12 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Dev_tools\/_webdev\/scss\/style-editor.css",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/style-editor.css",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/Dev_tools\/_webdev\/scss\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Dev_tools\/_webdev\/scss\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/Dev_tools\/_webdev\/scss\/style.scss" : {
       "aP" : 0,
@@ -1447,9 +1535,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/Dev_tools\/_webdev\/scss\/style.css",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/style.css",
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1458,16 +1546,16 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/block_transitiondata.php",
-      "oF" : 0
+      "oF" : 1
     },
     "\/Dev_tools\/bin\/img\/ajax-loader.gif" : {
       "ft" : 4194304,
       "iS" : 4178,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/ajax-loader.gif",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "rq" : 75
@@ -1475,9 +1563,9 @@
     "\/Dev_tools\/bin\/img\/arrow_green.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/arrow_green.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1485,9 +1573,9 @@
     "\/Dev_tools\/bin\/img\/arrow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/arrow.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1495,9 +1583,9 @@
     "\/Dev_tools\/bin\/img\/block_icons\/alien-solid.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/block_icons\/alien-solid.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1505,9 +1593,9 @@
     "\/Dev_tools\/bin\/img\/block_icons\/overlays.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/block_icons\/overlays.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1515,9 +1603,9 @@
     "\/Dev_tools\/bin\/img\/cross_over.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/cross_over.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1525,9 +1613,9 @@
     "\/Dev_tools\/bin\/img\/cross.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/cross.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1535,9 +1623,9 @@
     "\/Dev_tools\/bin\/img\/favi\/android-chrome-192x192.png" : {
       "ft" : 32768,
       "iS" : 8943,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/android-chrome-192x192.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1548,9 +1636,9 @@
     "\/Dev_tools\/bin\/img\/favi\/android-chrome-512x512.png" : {
       "ft" : 32768,
       "iS" : 12040,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/android-chrome-512x512.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1561,9 +1649,9 @@
     "\/Dev_tools\/bin\/img\/favi\/apple-touch-icon.png" : {
       "ft" : 32768,
       "iS" : 8331,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/apple-touch-icon.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1575,16 +1663,16 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/browserconfig.xml",
-      "oF" : 0
+      "oF" : 1
     },
     "\/Dev_tools\/bin\/img\/favi\/favicon-16x16.png" : {
       "ft" : 32768,
       "iS" : 957,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/favicon-16x16.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1595,9 +1683,9 @@
     "\/Dev_tools\/bin\/img\/favi\/favicon-32x32.png" : {
       "ft" : 32768,
       "iS" : 1564,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/favicon-32x32.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1609,16 +1697,16 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/favicon.ico",
-      "oF" : 0
+      "oF" : 1
     },
     "\/Dev_tools\/bin\/img\/favi\/mstile-150x150.png" : {
       "ft" : 32768,
       "iS" : 4346,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/mstile-150x150.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1629,9 +1717,9 @@
     "\/Dev_tools\/bin\/img\/favi\/safari-pinned-tab.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/safari-pinned-tab.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1640,16 +1728,16 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/favi\/site.webmanifest",
-      "oF" : 0
+      "oF" : 1
     },
     "\/Dev_tools\/bin\/img\/horse-shoe.png" : {
       "ft" : 32768,
       "iS" : 3920,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/horse-shoe.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -1660,9 +1748,9 @@
     "\/Dev_tools\/bin\/img\/logos\/basket-hover.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/basket-hover.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1670,9 +1758,9 @@
     "\/Dev_tools\/bin\/img\/logos\/basket.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/basket.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1680,9 +1768,9 @@
     "\/Dev_tools\/bin\/img\/logos\/estate-menu.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/estate-menu.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1690,9 +1778,9 @@
     "\/Dev_tools\/bin\/img\/logos\/facebook-square.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/facebook-square.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1700,9 +1788,9 @@
     "\/Dev_tools\/bin\/img\/logos\/instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/instagram.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1710,9 +1798,9 @@
     "\/Dev_tools\/bin\/img\/logos\/search-hover.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/search-hover.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1720,9 +1808,9 @@
     "\/Dev_tools\/bin\/img\/logos\/search.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/search.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1730,9 +1818,9 @@
     "\/Dev_tools\/bin\/img\/logos\/strength9.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/strength9.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1740,9 +1828,9 @@
     "\/Dev_tools\/bin\/img\/logos\/twitter.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/logos\/twitter.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1750,9 +1838,9 @@
     "\/Dev_tools\/bin\/img\/minus-solid.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/minus-solid.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1760,9 +1848,9 @@
     "\/Dev_tools\/bin\/img\/play-button.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/play-button.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1770,9 +1858,9 @@
     "\/Dev_tools\/bin\/img\/plus-solid.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/img\/plus-solid.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -1782,9 +1870,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/js\/html5-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1793,9 +1881,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/js\/modern-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1804,9 +1892,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/js\/script-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1815,9 +1903,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/js\/slider-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1826,9 +1914,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Dev_tools\/bin\/js\/vimeo-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1936,18 +2024,6 @@
       "oAP" : "\/single.php",
       "oF" : 0
     },
-    "\/style-editor-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/style-editor-min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/style-editor.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1957,18 +2033,6 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/style-editor-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/style-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/style-min-min.css",
       "oF" : 0,
       "pg" : 0
     },
