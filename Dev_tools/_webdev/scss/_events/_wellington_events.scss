@@ -63,12 +63,16 @@ $s9w_hovercol: #c49a6c;
     color: $s9w_defaulttxtcolor;
     font-size:16px;	
     margin:0 0 30px;
+    font-weight:500;
+    font-family: var(--font-base);
 }
 @mixin s9w_event_detail_subarea_content_span {
     font-weight:bold;
 } 
 @mixin s9w_event_detail_subarea_content_address {
     font-style: normal;
+    font-weight:500;
+    font-family: var(--font-base);
 }
 @mixin s9w_event_detail_subarea_link {
     color: $s9w_defaulttxtcolor;
@@ -82,19 +86,23 @@ $s9w_hovercol: #c49a6c;
 // Event Small items
 @mixin s9w_event_detail_breadcrumbbtop {
    display:inline-block;
-   color: $s9w_defaulttxtcolor;
+   color: $s9w_hovercol;
     padding:10px;
+    font-weight:500;
+    font-family: var(--font-base);
     
     &:hover {
-        color:$s9w_hovercol !important;
+        color:$s9w_defaulttxtcolor !important;
     }
 }
 @mixin s9w_event_detail_icalendar {
-   color: $s9w_defaulttxtcolor;
+   color: $s9w_hovercol;
     padding:10px;
+    font-weight:500;
+    font-family: var(--font-base);
     
     &:hover {
-        color:$s9w_hovercol !important;
+        color:$s9w_defaulttxtcolor !important;
     }
 }
 @mixin s9w_event_detail_buttonlinks {
@@ -108,11 +116,14 @@ $s9w_hovercol: #c49a6c;
     }
 }
 @mixin s9w_event_detail_breadcrumblinks {
-    color:$s9w_defaulttxtcolor !important;
+    
+    color:$s9w_hovercol !important;
     padding:10px;
+    font-weight:500;
+    font-family: var(--font-base);
     
     &:hover {
-        color:$s9w_hovercol !important;
+        color:$s9w_defaulttxtcolor !important;
     }
 }
 @mixin s9w_event_detail_relatedtitle {

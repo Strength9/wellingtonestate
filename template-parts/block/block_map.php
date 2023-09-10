@@ -199,7 +199,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.358800,-1.004482])
-		.setContent('<p class="marker-label pp_wes">WELLINGTON ESTATE OFFICE<br>& WELLBEING</p>')
+		.setContent('<p class="marker-label pp_wes">WELLINGTON ESTATE OFFICE<br>& THE BARNS @ WELLINGTON</p>')
 		.addTo(map);
 
 	var markerLabel = L.popup({
@@ -208,7 +208,7 @@ var draggingValue = true;
 			closeOnClick: false
 		})
 		.setLatLng([51.331886,-0.987825])
-		.setContent('<p class="marker-label pp_danes">DANESHILL SCHOOL</p>')
+		.setContent('<p class="marker-label pp_danes">WELLESLEY PREP SCHOOL</p>')
 		.addTo(map);
 
 	var markerLabel = L.popup({

@@ -18,11 +18,15 @@
 						color: #FFFFFF;
 						font-family: var(--font-base-heading);
 						font-weight:200;
-						font-size: 42px;
+						font-size: 25px;
 						text-shadow: 0px 0px 11px #000;
 						text-transform: none;
 						line-height: 25px;
 						text-align: center;
+
+						@media only screen and (min-width:400px) {
+							font-size: 42px;
+						}
 					}
 
 

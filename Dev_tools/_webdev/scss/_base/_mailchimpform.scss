@@ -1,0 +1,128 @@
+
+.mailchimpform {
+    
+    padding:100px 50px;
+    
+    #wpforms-form-1370 {
+        width:100%;
+        margin:0;
+        padding:0 30px;
+       
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0,auto) minmax(0,auto) minmax(0,auto);
+        gap: 0px 0px;
+        grid-auto-flow: row; grid-template-areas: "formtitle" "formcon" "subcon";
+        
+        @media only screen and (min-width:1200px) {
+           // padding:0px;
+        }
+
+            .wpforms-head-container {
+                grid-area: formtitle;
+
+                .wpforms-title {
+                    text-align: left;
+                    color: var(--w-green);
+                    font-family: var(--font-base-heading);
+                    font-size: 24px;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    font-style: normal;
+                    margin-bottom: 0px;
+                    display: block;
+                }
+
+            }
+            .wpforms-field-container { 
+                width:100%;
+                margin:0;
+                padding:0;
+                grid-area: formcon;
+                display: grid; 
+                grid-template-columns: 1fr; 
+                grid-template-rows: minmax(0,auto) minmax(0,auto) minmax(0,auto); 
+                gap: 0px 0px; 
+                grid-template-areas:  "nme" "email" "check";
+
+                #wpforms-1370-field_5-container {
+                    grid-area: nme;
+                    padding-left:0;
+                    padding-right:0;
+                    
+                    fieldset {
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                        legend {
+                            display: none;
+                        }
+
+                        .wpforms-field-row.wpforms-field-large {
+                            display:flex;
+                            flex-wrap: wrap;
+                            .wpforms-one-half {
+                                flex: 1 1 50%;
+                                @media only screen and (max-width:450px) {
+                                    flex:0 0 100%;
+                                    margin-left:0;
+                                    margin-right:0;
+                                    padding-left:0;
+                                    padding-right:0;
+                                }
+                            }
+                           
+                             
+                        }
+
+                    }
+                }
+                #wpforms-1370-field_2-container {
+                    grid-area: email;
+                    padding-left:0;
+                    padding-right:0;
+                    input[type="email"]{
+                        margin:0;
+                            background-color: #e2e7e4;
+                            border-radius: 5px;
+                            border: none;
+                            font-family:var(--font-base);
+                            color: var(--w-green);
+                            font-size: 14px;
+                            height: 54px;
+                            line-height: 43px;
+                            padding: 6px 20px;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            width:100%;
+                  }
+                }
+                #wpforms-1370-field_6-container {
+                    grid-area: check;
+                }
+
+            }
+            .wpforms-submit-container { 
+                grid-area: subcon; 
+                box-sizing: border-box;
+                width:100%;
+                padding:0 0px;
+               
+
+                #wpforms-submit-1370 {
+                    display:inline-block;
+                   
+                    margin:0 auto 0 0;
+                    clear:both;
+                    float:none;
+                    width:auto !important;
+                }
+
+            }
+
+    }
+
+    #wpforms-confirmation-1370 {
+        padding:50px 40px;
+    }
+}

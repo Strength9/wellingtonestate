@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../plugins/wellington-events"
+		},
+		{
+			"path": "../../plugins/Wellington-Jobs-Plugin"
+		},
+		{
+			"path": "../../plugins/searchresults_plugin"
+		}
+	],
+	"settings": {}
+}

@@ -254,7 +254,7 @@ display:none;
 .s9_we_breadcrumbsfooter {
 	grid-area: s9_we_breadcrumbsfooter; 
 	
-	padding:10px 10px;
+	padding:10px 0px;
 	
 	ul {
 		  width:100%;
@@ -308,10 +308,10 @@ display:none;
 		  li {
 			  list-style:none;
 			 
-			  margin:20px;
+			  margin:20px 0;
 			  padding:0;
 			  order: 0;
-			  flex: 0 0 313px;
+			  flex: 0 1 313px;
 			  align-self: auto;
 			  
 			  &.title {

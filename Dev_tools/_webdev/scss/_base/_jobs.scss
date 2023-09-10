@@ -33,7 +33,6 @@
 			display:block;
 			
 			.siteimage {
-				background-color:red;
 				background-position:center center;
 				background-size:cover;
 				background-repeat:no-repeat;
@@ -473,7 +472,7 @@ h2.latestjobs {
 
 
  .relatedeventslisty {
-	padding:0 20px;
+	padding:0 0px;
 	max-width:1140px;
 	margin:20px auto;
 	display: flex;
@@ -504,7 +503,7 @@ h2.latestjobs {
 		
 		.site {
 			display:block;
-			width:320px;
+			flex: 0 1 320px;
 			margin:15px;
 
 			@media only screen and (min-width:550px) {
@@ -525,7 +524,6 @@ h2.latestjobs {
 
 			
 			.siteimage {
-				background-color:red;
 				background-position:center center;
 				background-size:cover;
 				background-repeat:no-repeat;
